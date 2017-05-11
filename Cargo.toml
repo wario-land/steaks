@@ -1,0 +1,6 @@
+[package]
+name = "steaks"
+version = "0.1.0"
+authors = ["Tibor Nagy <xnagytibor@gmail.com>"]
+
+[dependencies]
