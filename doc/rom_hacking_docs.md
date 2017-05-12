@@ -30,9 +30,9 @@ Each map has a record in a global table located at `0x083F4E88` in the ROM. Ther
 | 0x19   | u8        | (?) Layer priority
 | 0x1A   | u8        | (?) Layer priority
 | 0x1B   | u8        | (?) Layer priority (Always 0x00)
-| 0x1C   | u32_le    | (?) Pointer
-| 0x20   | u32_le    | (?) Pointer
-| 0x24   | u32_le    | (?) Pointer
+| 0x1C   | u32_le    | Pointer to game entities (Hard)
+| 0x20   | u32_le    | Pointer to game entities (Normal)
+| 0x24   | u32_le    | Pointer to game entities (S-Hard)
 | 0x28   | u8        | (?)
 | 0x29   | u8        | (?)
 | 0x2A   | u8        | (?)
