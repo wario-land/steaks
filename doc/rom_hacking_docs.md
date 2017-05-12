@@ -30,9 +30,9 @@ Each map has a record in a global table located at `0x083F4E88` in the ROM. Ther
 | 0x19   | u8        | (?) Layer priority
 | 0x1A   | u8        | (?) Layer priority
 | 0x1B   | u8        | (?) Layer priority (Always 0x00)
-| 0x1C   | u32_le    | Pointer to game entities (Hard)
-| 0x20   | u32_le    | Pointer to game entities (Normal)
-| 0x24   | u32_le    | Pointer to game entities (S-Hard)
+| 0x1C   | u32_le    | Hard game entity list pointer
+| 0x20   | u32_le    | Normal game entity list pointer
+| 0x24   | u32_le    | S-Hard game entity list pointer
 | 0x28   | u8        | (?)
 | 0x29   | u8        | (?)
 | 0x2A   | u8        | (?)
@@ -124,6 +124,36 @@ Each tileset index indexes a record in a global tileset record table starting fr
 | 0x20   | u32       | (?) Pointer
 
 TODO: List unused records.
+
+### Entity lists
+
+The game entities for each map and difficulty level stored in separate lists. The records are 3 bytes long and the first record is aligned to 32-bit. The end of the list marker is record with all of its fields containing 0xFF. The record structure is:
+
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| 0x00   | u8        | Y-coordinate (top -> bottom)
+| 0x01   | u8        | X-coordinate (left -> right)
+| 0x02   | u8        | Entity index
+
+### Entity indices
+
+| Index | Entity
+| ----- | ------
+| 0x00  | Game crash
+| 0x01  | Box with top-right quadrant
+| 0x02  | Box with bottom-right quadrant
+| 0x03  | Box with bottom-left quadrant
+| 0x04  | Box with top-left quadrant
+| 0x05  | CD box
+| 0x06  | Health box
+| 0x07  | Large diamond
+| 0x08  | Frog switch
+| 0x09  | Keyzer
+| 0x11  | Portal
+| 0x12  | Walking torch
+| 0x13  | Totsumen
+| 0x14  | Rock to throw
+| 0x15  | Opened box
 
 ## Text encoding
 TODO: Import the text tables I reversed several years ago under my prev nickname.
