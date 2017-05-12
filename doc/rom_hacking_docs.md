@@ -137,6 +137,8 @@ The game entities for each map and difficulty level stored in separate lists. Th
 
 ### Entity indices
 
+It seems like every map has a local selection of entities from a global list. Entities below 0x10 seems to be shared between every map.
+
 | Index | Entity
 | ----- | ------
 | 0x00  | Game crash
@@ -149,6 +151,7 @@ The game entities for each map and difficulty level stored in separate lists. Th
 | 0x07  | Large diamond
 | 0x08  | Frog switch
 | 0x09  | Keyzer
+| 0x10  | Black cat
 | 0x11  | Portal
 | 0x12  | Walking torch
 | 0x13  | Totsumen
