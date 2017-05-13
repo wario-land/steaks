@@ -185,5 +185,7 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 
 # TODOs
 * There are dozens of pointer-data pairs right after the map record table. They might be connected to the maps somehow.
+* Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
+
 
 - *xnagytibor*
