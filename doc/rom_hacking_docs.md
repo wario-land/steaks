@@ -97,11 +97,62 @@ The game stores the tileset index of the current map at the RAM location 0x03000
 | 0x1D | Factory
 | 0x1E | Factory
 | 0x1F | Jungle
-| ...  | ...
+| 0x20 | Factory
+| 0x21 | Junkyard
+| 0x22 | Junkyard
+| 0x23 | Pinball
+| 0x24 | Pinball
+| 0x25 | Pinball (with Gorilla)
+| 0x26 | Jungle
+| 0x27 | 40 Below Fridge?
+| 0x28 | Jungle
+| 0x29 | Jungle caves
+| 0x2A | Hotel
+| 0x2B | Hotel
+| 0x2C | Hotel
+| 0x2D | Hotel
+| 0x2E | Hotel
+| 0x2F | Hotel (outside)
 | 0x30 | Unused in-game (Haunted House)
 | 0x31 | Unused in-game (Haunted House)
 | 0x32 | Unused in-game (Cardboard)
-| ...  | ...
+| 0x33 | Cardboard
+| 0x34 | Caves
+| 0x35 | Jungle
+| 0x36 | Caves
+| 0x37 | Lava level
+| 0x38 | Caves
+| 0x39 | Golden Passage
+| 0x3A | Hotel
+| 0x3B | Hotel
+| 0x3C | Hotel
+| 0x3D | Hotel
+| 0x3E | 40 Below Fridge
+| 0x3F | Factory
+| 0x40 | Factory
+| 0x41 | Arabian
+| 0x42 | Arabian?
+| 0x43 | Boss corridor
+| 0x44 | Boss room? (golden)
+| 0x45 | Frozen lava level
+| 0x46 | Lava level
+| 0x47 | Hall of Hieroglyphs
+| 0x48 | Boss room?
+| 0x49 | Boss room?
+| 0x4A | Boss corridor
+| 0x4B | Boss corridor
+| 0x4C | Boss corridor
+| 0x4D | Boss corridor
+| 0x4E | Boss corridor
+| 0x4F | Boss room?
+| 0x50 | Hall of Hieroglyphs
+| 0x51 | Jungle
+| 0x52 | Wildflower
+| 0x53 | Crescent Moon Village
+| 0x54 | Crescent Moon Village
+| 0x55 | Crescent Moon Village
+| 0x56 | Toy Block Tower
+| 0x57 | Pinball
 | 0x58 | Bonus room
 | 0x59 | Bonus room
 | 0x5A | Final level
