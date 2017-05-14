@@ -209,21 +209,22 @@ It seems like every map has a local selection of entities from a global list. En
 | 0x14  | Rock to throw
 | 0x15  | Opened box
 
-## Music
+## Music/SFX
 
-The music is stored in a MIDI-like event driven format. The music driver might be MP2000 from the official Nintendo SDK.
+The music and sound effects is stored in a MIDI-like event driven format. The music driver might be MP2000 from the official Nintendo SDK.
 
-### Music table
+### Music/SFX table
 
-Start from 0x08098028 in ROM, each record is 8 bytes long (or a multiple of that). 6552 bytes altogether. The records are not unique, there are duplication among them.
+Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The records are not unique, there are duplication among them.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
 | 0x00   | u32       | Pointer to the music tracks record
-| 0x04   | u32       | (?)
+| 0x04   | u16       | (?)
+| 0x06   | u16       | (?) Not read by the game
 
 
-### Music tracks
+### Music/SFX tracks
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
