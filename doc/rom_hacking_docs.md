@@ -209,6 +209,29 @@ It seems like every map has a local selection of entities from a global list. En
 | 0x14  | Rock to throw
 | 0x15  | Opened box
 
+## Music
+
+The music is stored in a MIDI-like event driven format. The music driver might be MP2000 from the official Nintendo SDK.
+
+### Music table
+
+Start from 0x08098028 in ROM, each record is 8 bytes long (or a multiple of that). 6552 bytes altogether. The records are not unique, there are duplication among them.
+
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| 0x00   | u32       | Pointer to the music tracks record
+| 0x04   | u32       | (?)
+
+
+### Music tracks
+
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| 0x00   | u32       | Track count
+| 0x04   | u32       | Track #1 data pointer
+| 0x08   | u32       | Track #2 data pointer
+| ...    | ...       | ...
+
 ## Text encoding
 TODO: Import the text tables I reversed several years ago under my prev nickname.
 ### In-game
@@ -235,7 +258,6 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 ### Credits
 
 # TODOs
-* There are dozens of pointer-data pairs right after the map record table. They might be connected to the maps somehow.
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
 * Another passage destination map: 0x08639068 + (i * 12), First byte: destination level index
 * Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
