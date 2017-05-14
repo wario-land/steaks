@@ -239,5 +239,8 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
 * Another passage destination map: 0x08639068 + (i * 12), First byte: destination level index
 * Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
+* Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
+* Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
+* Some map metadata for HoH screen 3: 0x0859BB0C - 0x0859BBE8 (icuGBA shown some memory activity here) And there's a pointer to this metadata at 0x083F5158.
 
 - *xnagytibor*
