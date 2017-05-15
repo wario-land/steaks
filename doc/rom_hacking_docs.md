@@ -223,6 +223,21 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x04   | u16       | (?)
 | 0x06   | u16       | (?) Not read by the game
 
+### Music/SFX indices
+
+| Index  | Description
+| ------ | -----------
+| 0x028B | Palm Tree Paradise music
+| 0x0293 | The Curious Factory music
+| 0x0297 | Toy Block Tower music
+| 0x029B | Crescent Moon Village music
+| 0x02A0 | Hall of Hieroglyps music
+|        |
+| ...    | ...
+
+Note about getting music indices:
+* Breakpoint at 0x08001DD2
+* Check the r0 register
 
 ### Music/SFX tracks
 
@@ -264,5 +279,7 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 * Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
 * Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
 * Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
+* Starting from 0x083B14F0 there are 32 bytes long records. Connected somehow to the entities.
+
 
 - *xnagytibor*
