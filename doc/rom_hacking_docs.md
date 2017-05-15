@@ -2,7 +2,7 @@
 
 ## About this document
 
-This document contains information about the data structures and algorithms used by a game called Wario Land 4. The goal of this document is to aid my process developing *Steaks!*, a level editor for the game.
+This document contains information about the data structures and algorithms used by a game called Wario Land 4. The goal of this document is to aid my process developing *Steaks!*, a level editor for the game. This document is work in progress, it's incomplete and some of its statements might be incorrect.
 
 ## Maps
 
@@ -227,6 +227,11 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 
 | Index  | Description
 | ------ | -----------
+| 0x0200 | (?) Seems like an unused jingle
+| 0x0201 | (?) Seems like an usused jingle
+| 0x027B | Into SFX
+| 0x027C | Intro music
+| 0x027D | (?) Unused intro cinematic SFX. What I hear: Wario halts his car, gets out and walks away.
 | 0x028B | Palm Tree Paradise music
 | 0x0293 | The Curious Factory music
 | 0x0297 | Toy Block Tower music
@@ -236,8 +241,8 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | ...    | ...
 
 Note about getting music indices:
-* Breakpoint at 0x08001DD2
-* Check the r0 register
+* Breakpoint at 0x08001DD2 and checking the r0 register
+* Or setting an on-write breakpoint at 0x03003202
 
 ### Music/SFX tracks
 
