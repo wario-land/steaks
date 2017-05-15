@@ -350,15 +350,91 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0278 | CD: The Errand
 | 0x0279 | CD: You and Your Shoes
 | 0x027A | CD: Mr. Ether & Planaria
-| 0x027B | Into SFX
-| 0x027C | Intro music
-| 0x027D | (?) Unused intro cinematic SFX. What I hear: Wario halts his car, gets out and walks away.
+| 0x027B | SFX: Intro
+| 0x027C | BGM: Intro
+| 0x027D | SFX: (?) Unused intro cinematic. What I hear: Wario halts his car, gets out and walks away.
+| 0x027E | BGM: Some bossy music
+| 0x027F | BGM: Overworld music
+| 0x0280 | BGM: Some bossy music
+| 0x0281 | (?)
+| 0x0282 | BGM: Time warp
+| 0x0283 | (?)
+| 0x0284 | (?)
+| 0x0285 | (?)
+| 0x0286 | (?)
+| 0x0287 | (?)
+| 0x0288 | (?)
+| 0x0289 | (?)
+| 0x028A | (?)
 | 0x028B | BGM: Palm Tree Paradise
+| 0x028C | BGM: Palm Tree Paradise
+| 0x028D | BGM: Palm Tree Paradise
+| 0x028E | BGM: Wildflower Fields
+| 0x028F | BGM: Mystic Lake
+| 0x0290 | BGM: Mystic Lake
+| 0x0291 | BGM: Mystic Lake
+| 0x0292 | BGM: Monsoon Jungle
 | 0x0293 | BGM: The Curious Factory
+| 0x0294 | BGM: The Toxic Landfill
+| 0x0295 | BGM: Pinball Zone
+| 0x0296 | BGM: 40 Below Fridge
 | 0x0297 | BGM: Toy Block Tower
+| 0x0298 | BGM: The Big Board
+| 0x0299 | BGM: Doodle Woods
+| 0x029A | BGM: Domino Row
 | 0x029B | BGM: Crescent Moon Village
+| 0x029C | BGM: Arabian Night
+| 0x029D | BGM: Hotel Horror
+| 0x029E | BGM: Fiery Cavern
+| 0x029F | BGM: Some bossy music (Unused?)
 | 0x02A0 | BGM: Hall of Hieroglyps
-
+| 0x02A1 | BGM: Bonus room
+| 0x02A2 | BGM: Bonus room
+| 0x02A3 | (?)
+| 0x02A4 | (?)
+| 0x02A5 | (?)
+| 0x02A6 | (?)
+| 0x02A7 | (?)
+| 0x02A8 | (?)
+| 0x02A9 | (?)
+| 0x02AA | BGM: Item Shop
+| 0x02AB | BGM: Item's entrance to fight
+| 0x02AC | BGM: Item's entrance to fight
+| 0x02AD | (?)
+| 0x02AE | (?)
+| 0x02AF | BGM: Boss music
+| 0x02B0 | BGM: Boss music
+| 0x02B1 | BGM: Boss music
+| 0x02B2 | (?)
+| 0x02B3 | (?)
+| 0x02B4 | (?)
+| 0x02B5 | (?)
+| 0x02B6 | (?)
+| 0x02B7 | (?)
+| 0x02B8 | (?)
+| 0x02B9 | (?)
+| 0x02BA | (?)
+| 0x02BB | (?)
+| 0x02BC | (?)
+| 0x02BD | BGM: Mini-Game Shop
+| 0x02BE | BGM: Wario Hop
+| 0x02BF | BGM: Wario Hop
+| 0x02C0 | BGM: Wario Hop
+| 0x02C1 | BGM: Wario Hop
+| 0x02C2 | BGM: Wario Hop
+| 0x02C3 | BGM: Wario Hop (short)
+| 0x02C4 | BGM: Wario's Roulette
+| 0x02C5 | SFX: Baseball
+| 0x02C6 | SFX: Baseball
+| 0x02C7 | SFX: Game over
+| 0x02C8 | SFX: Game over
+| 0x02C9 | SFX: Baseball
+| 0x02CA | SFX: Baseball
+| 0x02CB | SFX: Baseball break
+| 0x02CC | SFX: Baseball break
+| 0x02CD | (?)
+| 0x02CE | (?)
+| 0x02CF | (?)
 | 0x02D0 | (?)
 | 0x02D1 | (?)
 | 0x02D2 | (?)
