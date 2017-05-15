@@ -227,16 +227,137 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 
 | Index  | Description
 | ------ | -----------
-| 0x0200 | (?) Seems like an unused jingle
-| 0x0201 | (?) Seems like an usused jingle
+| 0x0200 | Some jingle (Unused?)
+| 0x0201 | Some jingle (Unused?)
+| 0x0202 | (?)
+| 0x0203 | SFX: Vheoh
+| 0x0204 | SFX: Drang-drang-thung
+| 0x0205 | (?)
+| 0x0206 | (?)
+| 0x0207 | SFX
+| 0x0208 | SFX: Cymbals
+| 0x0209 | SFX: Various percussions
+| 0x020A | SFX: Barking and birds
+| 0x020B | SFX: Flute-like tu-tih
+| 0x020C | SFX: Some eastern instrument
+| 0x020D | SFX: Cuckoo bird
+| 0x020E | SFX: Frogs
+| 0x020F | SFX: Medium pitched voice
+| 0x0210 | SFX: High pitched voice
+| 0x0211 | SFX: Blargh-blargh voice
+| 0x0212 | SFX: High pitched voice
+| 0x0213 | SFX: Baby-like blabbing
+| 0x0214 | SFX: Hmm voice
+| 0x0215 | SFX: Huh voice
+| 0x0216 | SFX: Sheep
+| 0x0217 | SFX: Police siren
+| 0x0218 | SFX: Ting-tong
+| 0x0219 | SFX: Bla-ha-hah
+| 0x021A | SFX: Bubbling-tong
+| 0x021B | (?)
+| 0x021C | (?)
+| 0x021D | (?)
+| 0x021E | (?)
+| 0x021F | (?)
+| 0x0220 | (?)
+| 0x0221 | (?)
+| 0x0222 | (?)
+| 0x0223 | SFX: Ti-tih
+| 0x0224 | SFX: Some quiet sound
+| 0x0225 | (?)
+| 0x0226 | (?)
+| 0x0227 | (?)
+| 0x0228 | (?)
+| 0x0229 | SFX: Some quiet sound
+| 0x022A | SFX: Some quiet sound
+| 0x022B | (?)
+| 0x022C | SFX: Baseball minigame
+| 0x022D | SFX: Baseball minigame
+| 0x022E | SFX: Baseball minigame
+| 0x022F | SFX: Baseball minigame
+| 0x0230 | SFX: Baseball minigame
+| 0x0231 | SFX: Baseball minigame
+| 0x0232 | (?)
+| 0x0233 | SFX: Baseball minigame
+| 0x0234 | SFX: Baseball minigame
+| 0x0235 | (?)
+| 0x0236 | (?)
+| 0x0237 | (?)
+| 0x0238 | (?)
+| 0x0239 | SFX: Wario Hop - Auh
+| 0x023A | SFX: Vehicle sounds
+| 0x023B | SFX: Some positive jingle
+| 0x023C | SFX: Some negative jingle
+| 0x023D | SFX: Wario Hop - Plomp
+| 0x023E | SFX: Wario Hop - Watchit
+| 0x023F | SFX: Wario Hop - Auh
+| 0x0240 | SFX: Wario Hop - Yuhey
+| 0x0241 | SFX: Wario Hop - Watchit
+| 0x0242 | SFX: Wario Hop - Ding
+| 0x0243 | SFX: Wario Hop - Auh
+| 0x0244 | SFX: Minigame - Ding dong
+| 0x0245 | SFX: Minigame - Doh doh
+| 0x0246 | SFX: Minigame - Tadah
+| 0x0247 | SFX: Minigame - Game over
+| 0x0248 | (?)
+| 0x0249 | (?)
+| 0x024A | (?)
+| 0x024B | (?)
+| 0x024C | (?)
+| 0x024D | (?)
+| 0x024E | (?)
+| 0x024F | SFX: Tick
+| 0x0250 | (?)
+| 0x0251 | SFX: Something obtained jingle
+| 0x0252 | SFX: End of level jingle
+| 0x0253 | (?)
+| 0x0254 | (?)
+| 0x0255 | (?)
+| 0x0256 | (?)
+| 0x0257 | (?)
+| 0x0258 | (?)
+| 0x0259 | (?)
+| 0x025A | (?)
+| 0x025B | (?)
+| 0x025C | (?)
+| 0x025D | (?)
+| 0x025E | (?)
+| 0x025F | (?)
+| 0x0260 | (?)
+| 0x0261 | (?)
+| 0x0262 | (?)
+| 0x0263 | (?)
+| 0x0264 | (?)
+| 0x0265 | (?)
+| 0x0266 | (?)
+| 0x0267 | (?)
+| 0x0268 | (?)
+| 0x0269 | BGM: Wario's workout
+| 0x026A | BGM: Sound Room
+| 0x026B | CD: About That Shepherd
+| 0x026C | CD: Things That Never Change
+| 0x026D | CD: Tomorrow's Blood Pressure
+| 0x026E | CD: Beyond the Headrush
+| 0x026F | CD: Driftwood & the Island Dog
+| 0x0270 | CD: The Judge's Feet
+| 0x0271 | CD: The Moon's Lamppost
+| 0x0272 | CD: Soft Shell
+| 0x0273 | CD: So Sleepy
+| 0x0274 | CD: The Short Futon
+| 0x0275 | CD: Avocado Song
+| 0x0276 | CD: Mr. Fly
+| 0x0277 | CD: Yesterday's Words
+| 0x0278 | CD: The Errand
+| 0x0279 | CD: You and Your Shoes
+| 0x027A | CD: Mr. Ether & Planaria
 | 0x027B | Into SFX
 | 0x027C | Intro music
 | 0x027D | (?) Unused intro cinematic SFX. What I hear: Wario halts his car, gets out and walks away.
-| 0x028B | Palm Tree Paradise music
-| 0x0293 | The Curious Factory music
-| 0x0297 | Toy Block Tower music
-| 0x029B | Crescent Moon Village music
-| 0x02A0 | Hall of Hieroglyps music
+| 0x028B | BGM: Palm Tree Paradise
+| 0x0293 | BGM: The Curious Factory
+| 0x0297 | BGM: Toy Block Tower
+| 0x029B | BGM: Crescent Moon Village
+| 0x02A0 | BGM: Hall of Hieroglyps
 |        |
 | ...    | ...
 
