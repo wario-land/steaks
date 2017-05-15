@@ -358,8 +358,106 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0297 | BGM: Toy Block Tower
 | 0x029B | BGM: Crescent Moon Village
 | 0x02A0 | BGM: Hall of Hieroglyps
-|        |
-| ...    | ...
+
+| 0x02D0 | (?)
+| 0x02D1 | (?)
+| 0x02D2 | (?)
+| 0x02D3 | (?)
+| 0x02D4 | (?)
+| 0x02D5 | (?)
+| 0x02D6 | (?)
+| 0x02D7 | BGM: Palm Tree Paradise (without vocals)
+| 0x02D8 | BGM: Palm Tree Paradise (without vocals)
+| 0x02D9 | BGM: Palm Tree Paradise (only vocals)
+| 0x02DA | Wario: Hurry up!
+| 0x02DB | Wario: Hurry up!
+| 0x02DC | Wario: Hurry up!
+| 0x02DD | Wario: Hu-hu-hu-hurry up!
+| 0x02DE | Wario: No-no-noh. Hurry up!
+| 0x02DF | Wario: Ya-hoo!
+| 0x02E0 | Wario: Yahoo!
+| 0x02E1 | Wario: Yahoo!
+| 0x02E2 | Wario: Yahoo!
+| 0x02E3 | Wario: Ya-hoo!
+| 0x02E4 | Wario
+| 0x02E5 | Wario
+| 0x02E6 | Wario
+| 0x02E7 | Wario: Here we go!
+| 0x02E8 | Wario: Here I go!
+| 0x02E9 | Wario: Here I go!
+| 0x02EA | Wario: Mamma mia.
+| 0x02EB | Wario: Mamma mia.
+| 0x02EC | Wario: Oh, boy.
+| 0x02ED | Wario: Oh, boy.
+| 0x02EE | Wario
+| 0x02EF | Wario
+| 0x02F0 | Wario: Sorry!
+| 0x02F1 | Wario: So-so-so-sorry!
+| 0x02F2 | Wario: Sorry!
+| 0x02F3 | Wario
+| 0x02F4 | Wario
+| 0x02F5 | Wario: Go, bye, go, bye, go-bye-bye! (Unused?)
+| 0x02F6 | Wario: Bye-bye-bye! (Unused?)
+| 0x02F7 | Wario: Bye, bye! (Unused?)
+| 0x02F8 | Wario: Höh.
+| 0x02F9 | Wario: Hey, hey.
+| 0x02FA | Wario: Ha, ha-ha!
+| 0x02FB | Wario: Ha, ha-ha!
+| 0x02FC | Wario: Ha-ha-ha-ha!
+| 0x02FD | Wario: Hi-hi-hi-hi!
+| 0x02FE | Wario: Hohey!
+| 0x02FF | Wario: Hohey!
+| 0x0300 | Wario: Hohey!
+| 0x0301 | Wario: Yeah!
+| 0x0302 | Wario
+| 0x0303 | Wario
+| 0x0304 | Wario
+| 0x0305 | Wario: No-no!
+| 0x0306 | Wario: Ergh, no-no!
+| 0x0307 | Wario: No, no!
+| 0x0308 | Wario: Wah-ah-ah-ah!
+| 0x0309 | Wario: Wah-ah-ah-ah!
+| 0x030A | (?)
+| 0x030B | (?)
+| 0x030C | (?)
+| 0x030D | Wario: Eh-eh!
+| 0x030E | Wario: Wah!
+| 0x030F | Wario: Wow!
+| 0x0310 | Wario: Wow!
+| 0x0311 | Wario: Wow!
+| 0x0312 | Wario: Yahoo!
+| 0x0313 | (?)
+| 0x0314 | (?)
+| 0x0315 | (?)
+| 0x0316 | (?)
+| 0x0317 | (?)
+| 0x0318 | (?)
+| 0x0319 | (?)
+| 0x031A | (?)
+| 0x031B | (?)
+| 0x031C | (?)
+| 0x031D | (?)
+| 0x031E | (?)
+| 0x031F | (?)
+| 0x0320 | BGM: Back to the portal
+| 0x0321 | BGM: (?) (Unused?)
+| 0x0322 | BGM: Princess cutscene
+| 0x0323 | BGM: Japanese credits
+| 0x0324 | BGM: Toy Block Tower
+| 0x0325 | BGM: Monsoon Jungle
+| 0x0326 | BGM: Japanese credits
+| 0x0327 | BGM: Crescent Moon Village
+| 0x0328 | BGM: Doodle Woods
+| 0x0329 | BGM: Japanese credits
+| 0x032A | BGM: Hall of Hieroglyphs (with vocals)
+| 0x032B | BGM: Wildflower Fields
+| 0x032C | BGM: Japanese credits
+| 0x032D | BGM: Mystic Lake
+| 0x032E | BGM: The Big Board
+| 0x032F | BGM: Credits
+| 0x0330 | BGM: Credits
+| 0x0331 | BGM: Credits
+| 0x0332 | BGM: Credits
 
 Note about getting music indices:
 * Breakpoint at 0x08001DD2 and checking the r0 register
