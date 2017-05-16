@@ -227,6 +227,101 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 
 | Index  | Description
 | ------ | -----------
+| 0x0000 | NUL
+| 0x0016 | SFX: (?) Time's up
+| 0x001C | NUL
+| 0x001D | NUL
+| 0x002F | NUL
+| 0x0044 | NUL
+| 0x0045 | NUL
+| 0x005E | SFX: Ghost stealing coins
+| 0x005F | SFX
+| 0x0060 | SFX: (?) Something found
+| 0x0080 | SFX
+| 0x0118 | NUL
+| 0x0119 | NUL
+| 0x011A | NUL
+| 0x011B | NUL
+| 0x011C | NUL
+| 0x012C | NUL
+| 0x012D | NUL
+| 0x012E | NUL
+| 0x012F | NUL
+| 0x0130 | NUL
+| 0x0131 | NUL
+| 0x0132 | NUL
+| 0x0133 | NUL
+| 0x0134 | NUL
+| 0x0135 | SFX: (?) Something found
+| 0x013D | NUL
+| 0x0145 | NUL
+| 0x0146 | NUL
+| 0x0147 | NUL
+| 0x0148 | NUL
+| 0x0149 | NUL
+| 0x014A | SFX: (?) Something found
+| 0x0157 | NUL
+| 0x0158 | NUL
+| 0x0159 | NUL
+| 0x015A | NUL
+| 0x015B | NUL
+| 0x015C | NUL
+| 0x015D | NUL
+| 0x0175 | NUL
+| 0x0176 | NUL
+| 0x0177 | NUL
+| 0x0178 | NUL
+| 0x0179 | NUL
+| 0x017A | NUL
+| 0x017B | NUL
+| 0x017C | NUL
+| 0x017D | NUL
+| 0x017E | NUL
+| 0x017F | NUL
+| 0x0180 | NUL
+| 0x0181 | NUL
+| 0x0182 | NUL
+| 0x0183 | NUL
+| 0x0184 | NUL
+| 0x0185 | NUL
+| 0x0186 | NUL
+| 0x0187 | NUL
+| 0x0188 | NUL
+| 0x0189 | NUL
+| 0x018A | NUL
+| 0x018B | NUL
+| 0x018C | NUL
+| 0x018D | NUL
+| 0x018E | NUL
+| 0x018F | NUL
+| 0x0190 | NUL
+| 0x0191 | NUL
+| 0x0192 | NUL
+| 0x0193 | NUL
+| 0x0194 | NUL
+| 0x0195 | NUL
+| 0x0196 | NUL
+| 0x0197 | NUL
+| 0x0198 | NUL
+| 0x0199 | NUL
+| 0x019A | NUL
+| 0x019B | NUL
+| 0x019C | NUL
+| 0x019D | NUL
+| 0x019E | NUL
+| 0x019F | NUL
+| 0x01A0 | NUL
+| 0x01A1 | NUL
+| 0x01A2 | NUL
+| 0x01A3 | NUL
+| 0x01D4 | NUL
+| 0x01D5 | NUL
+| 0x01EE | NUL
+| 0x01EF | NUL
+| 0x01F0 | NUL
+| 0x01F1 | NUL
+| 0x01F2 | NUL
+| 0x01F3 | NUL
 | 0x0200 | Some jingle (Unused?)
 | 0x0201 | Some jingle (Unused?)
 | 0x0202 | (?)
@@ -254,7 +349,7 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0218 | SFX: Ting-tong
 | 0x0219 | SFX: Bla-ha-hah
 | 0x021A | SFX: Bubbling-tong
-| 0x021B | (?)
+| 0x021B | NUL
 | 0x021C | (?)
 | 0x021D | (?)
 | 0x021E | (?)
@@ -310,28 +405,28 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0250 | (?)
 | 0x0251 | SFX: Something obtained jingle
 | 0x0252 | SFX: End of level jingle
-| 0x0253 | (?)
-| 0x0254 | (?)
-| 0x0255 | (?)
-| 0x0256 | (?)
-| 0x0257 | (?)
-| 0x0258 | (?)
-| 0x0259 | (?)
-| 0x025A | (?)
-| 0x025B | (?)
-| 0x025C | (?)
-| 0x025D | (?)
-| 0x025E | (?)
-| 0x025F | (?)
-| 0x0260 | (?)
-| 0x0261 | (?)
-| 0x0262 | (?)
-| 0x0263 | (?)
-| 0x0264 | (?)
-| 0x0265 | (?)
-| 0x0266 | (?)
-| 0x0267 | (?)
-| 0x0268 | (?)
+| 0x0253 | NUL
+| 0x0254 | NUL
+| 0x0255 | NUL
+| 0x0256 | NUL
+| 0x0257 | NUL
+| 0x0258 | NUL
+| 0x0259 | NUL
+| 0x025A | NUL
+| 0x025B | NUL
+| 0x025C | NUL
+| 0x025D | NUL
+| 0x025E | NUL
+| 0x025F | NUL
+| 0x0260 | NUL
+| 0x0261 | NUL
+| 0x0262 | NUL
+| 0x0263 | NUL
+| 0x0264 | NUL
+| 0x0265 | NUL
+| 0x0266 | NUL
+| 0x0267 | NUL
+| 0x0268 | NUL
 | 0x0269 | BGM: Wario's workout
 | 0x026A | BGM: Sound Room
 | 0x026B | CD: About That Shepherd
@@ -356,16 +451,16 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x027E | BGM: Some bossy music
 | 0x027F | BGM: Overworld music
 | 0x0280 | BGM: Some bossy music
-| 0x0281 | (?)
+| 0x0281 | NUL
 | 0x0282 | BGM: Time warp
-| 0x0283 | (?)
-| 0x0284 | (?)
-| 0x0285 | (?)
-| 0x0286 | (?)
-| 0x0287 | (?)
-| 0x0288 | (?)
-| 0x0289 | (?)
-| 0x028A | (?)
+| 0x0283 | NUL
+| 0x0284 | NUL
+| 0x0285 | NUL
+| 0x0286 | NUL
+| 0x0287 | NUL
+| 0x0288 | NUL
+| 0x0289 | NUL
+| 0x028A | NUL
 | 0x028B | BGM: Palm Tree Paradise
 | 0x028C | BGM: Palm Tree Paradise
 | 0x028D | BGM: Palm Tree Paradise
@@ -390,13 +485,12 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x02A0 | BGM: Hall of Hieroglyps
 | 0x02A1 | BGM: Bonus room
 | 0x02A2 | BGM: Bonus room
-| 0x02A3 | (?)
-| 0x02A4 | (?)
-| 0x02A5 | (?)
-| 0x02A6 | (?)
-| 0x02A7 | (?)
-| 0x02A8 | (?)
-| 0x02A9 | (?)
+| 0x02A3 | NUL
+| 0x02A4 | NUL
+| 0x02A5 | NUL
+| 0x02A6 | NUL
+| 0x02A7 | NUL
+| 0x02A8 | NUL
 | 0x02AA | BGM: Item Shop
 | 0x02AB | BGM: Item's entrance to fight
 | 0x02AC | BGM: Item's entrance to fight
@@ -405,17 +499,17 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x02AF | BGM: Boss music
 | 0x02B0 | BGM: Boss music
 | 0x02B1 | BGM: Boss music
-| 0x02B2 | (?)
-| 0x02B3 | (?)
-| 0x02B4 | (?)
-| 0x02B5 | (?)
-| 0x02B6 | (?)
-| 0x02B7 | (?)
-| 0x02B8 | (?)
-| 0x02B9 | (?)
-| 0x02BA | (?)
-| 0x02BB | (?)
-| 0x02BC | (?)
+| 0x02B2 | NUL
+| 0x02B3 | NUL
+| 0x02B4 | NUL
+| 0x02B5 | NUL
+| 0x02B6 | NUL
+| 0x02B7 | NUL
+| 0x02B8 | NUL
+| 0x02B9 | NUL
+| 0x02BA | NUL
+| 0x02BB | NUL
+| 0x02BC | NUL
 | 0x02BD | BGM: Mini-Game Shop
 | 0x02BE | BGM: Wario Hop
 | 0x02BF | BGM: Wario Hop
@@ -432,16 +526,16 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x02CA | SFX: Baseball
 | 0x02CB | SFX: Baseball break
 | 0x02CC | SFX: Baseball break
-| 0x02CD | (?)
-| 0x02CE | (?)
-| 0x02CF | (?)
-| 0x02D0 | (?)
-| 0x02D1 | (?)
-| 0x02D2 | (?)
-| 0x02D3 | (?)
-| 0x02D4 | (?)
-| 0x02D5 | (?)
-| 0x02D6 | (?)
+| 0x02CD | NUL
+| 0x02CE | NUL
+| 0x02CF | NUL
+| 0x02D0 | NUL
+| 0x02D1 | NUL
+| 0x02D2 | NUL
+| 0x02D3 | NUL
+| 0x02D4 | NUL
+| 0x02D5 | NUL
+| 0x02D6 | NUL
 | 0x02D7 | BGM: Palm Tree Paradise (without vocals)
 | 0x02D8 | BGM: Palm Tree Paradise (without vocals)
 | 0x02D9 | BGM: Palm Tree Paradise (only vocals)
@@ -502,19 +596,19 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0310 | Wario: Wow!
 | 0x0311 | Wario: Wow!
 | 0x0312 | Wario: Yahoo!
-| 0x0313 | (?)
-| 0x0314 | (?)
-| 0x0315 | (?)
-| 0x0316 | (?)
-| 0x0317 | (?)
-| 0x0318 | (?)
-| 0x0319 | (?)
-| 0x031A | (?)
-| 0x031B | (?)
-| 0x031C | (?)
-| 0x031D | (?)
-| 0x031E | (?)
-| 0x031F | (?)
+| 0x0313 | NUL
+| 0x0314 | NUL
+| 0x0315 | NUL
+| 0x0316 | NUL
+| 0x0317 | NUL
+| 0x0318 | NUL
+| 0x0319 | NUL
+| 0x031A | NUL
+| 0x031B | NUL
+| 0x031C | NUL
+| 0x031D | NUL
+| 0x031E | NUL
+| 0x031F | NUL
 | 0x0320 | BGM: Back to the portal
 | 0x0321 | BGM: (?) (Unused?)
 | 0x0322 | BGM: Princess cutscene
@@ -534,6 +628,8 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x0330 | BGM: Credits
 | 0x0331 | BGM: Credits
 | 0x0332 | BGM: Credits
+
+
 
 Note about getting music indices:
 * Breakpoint at 0x08001DD2 and checking the r0 register
