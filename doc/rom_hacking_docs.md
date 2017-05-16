@@ -864,7 +864,7 @@ Start from 0x08098028 in ROM, each record is 8 bytes long. 819 records. The reco
 | 0x027A | CD: Mr. Ether & Planaria
 | 0x027B | SFX: Intro
 | 0x027C | BGM: Intro
-| 0x027D | SFX: (?) Unused intro cinematic. What I hear: Wario halts his car, gets out and walks away.
+| 0x027D | SFX: New game intro scene SFX
 | 0x027E | BGM: Some bossy music
 | 0x027F | BGM: Overworld music
 | 0x0280 | BGM: Some bossy music
