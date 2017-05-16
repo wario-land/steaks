@@ -209,9 +209,40 @@ It seems like every map has a local selection of entities from a global list. En
 | 0x14  | Rock to throw
 | 0x15  | Opened box
 
-### Map entrances
+### Pointers for map entrance lists
 
-Starts from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records.
+They start from 0x0878F21C and point to map entrance lists.
+
+| Offset | Data type | Level
+| ------ | --------- | -----
+| 0x00   | u32       | Hall of Hieroglyphs
+| 0x04   | u32       | Palm Tree Paradise
+| 0x08   | u32       | Wildflower Fields
+| 0x0C   | u32       | Mystic Lake
+| 0x10   | u32       | Monsoon Jungle
+| 0x14   | u32       | The Curious Factory
+| 0x18   | u32       | The Toxic Landfill
+| 0x1C   | u32       | (?) Pinball Zone
+| 0x20   | u32       | 40 Below Fridge
+| 0x24   | u32       | Toy Block Tower
+| 0x28   | u32       | The Big Board
+| 0x2C   | u32       | Doodle Woods
+| 0x30   | u32       | Domino Row
+| 0x34   | u32       | Crescent Moon Village
+| 0x38   | u32       | Arabian Night
+| 0x3C   | u32       | Hotel Horror
+| 0x40   | u32       | Fiery Cavern
+| 0x44   | u32       | (?) Some boss level
+| 0x48   | u32       | (?) Some boss level
+| 0x4C   | u32       | (?) Some boss level
+| 0x50   | u32       | (?) Some boss level
+| 0x54   | u32       | (?) Some boss level
+| 0x58   | u32       | (?) Some boss level
+| 0x5C   | u32       | (?) Some boss level
+
+### Map entrance list
+
+The data from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records.
 
 Note: from 0x0878E780 to 0x0878F970 there are several of pointers pointing to these records.
 
