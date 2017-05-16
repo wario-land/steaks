@@ -209,23 +209,25 @@ It seems like every map has a local selection of entities from a global list. En
 | 0x14  | Rock to throw
 | 0x15  | Opened box
 
-### Level metadata
+### Map entrances
 
-Starts from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records. Might contain map connections and/or camera constraints.
+Starts from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records.
+
+Note: from 0x0878E780 to 0x0878F970 there are several of pointers pointing to these records.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u8        | (?) Possible values: 0x01, 0x02, 0x03
-| 0x01   | u8        | (?) Looks like a sequence number
-| 0x02   | u8        | (?)
-| 0x03   | u8        | (?) Most of the time same as the prev byte (but not always)
-| 0x04   | u8        | (?)
-| 0x05   | u8        | (?)
-| 0x06   | u8        | (?)
-| 0x07   | u8        | (?)
-| 0x08   | u8        | (?)
+| 0x00   | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
+| 0x01   | u8        | (?) Looks like a sequence/map number
+| 0x02   | u8        | (?) Might be the X-coordinate
+| 0x03   | u8        | (?) Might be the X-coordinate
+| 0x04   | u8        | (?) Might be the Y-coordinate
+| 0x05   | u8        | (?) Might be the Y-coordinate
+| 0x06   | u8        | Destination (0x00 - Back to the overworld)
+| 0x07   | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
+| 0x08   | u8        | (?) Similar to the previous value
 | 0x09   | u8        | (?) Connected somehow to entities
-| 0x0A   | u16       | Music index, 0x0000 means no change
+| 0x0A   | u16       | Music index, 0x0000 means no change on entering
 
 ## Music/SFX
 
