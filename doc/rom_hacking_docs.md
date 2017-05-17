@@ -1136,6 +1136,34 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 
 ### Credits
 
+#### One-tile high
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **4x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **5x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  | .  | ,  |    |    |    |    |
+
+#### Two-tile high, upper half
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **6x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **7x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
+| **Ax** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
+| **Bx** | q  | r  | s  | t  | u  | v  | w  | x  | y  |    |    |    |    |    |    |    |
+
+#### Two-tile high, lower half
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **8x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **9x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
+| **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
+| **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
+
+
+
+
 # TODOs
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
 * Another passage destination map: 0x08639068 + (i * 12), First byte: destination level index
