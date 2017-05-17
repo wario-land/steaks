@@ -209,6 +209,37 @@ It seems like every map has a local selection of entities from a global list. En
 | 0x14  | Rock to throw
 | 0x15  | Opened box
 
+### Pointers for map records
+
+They start at 0x0878F280 and they point the first map record each the level.
+
+| Offset | Data type | Level
+| ------ | --------- | -----
+| 0x00   | u32       | Hall of Hieroglyphs
+| 0x04   | u32       | Palm Tree Paradise
+| 0x08   | u32       | Wildflower Fields
+| 0x0C   | u32       | Mystic Lake
+| 0x10   | u32       | Monsoon Jungle
+| 0x14   | u32       | The Curious Factory
+| 0x18   | u32       | The Toxic Landfill
+| 0x1C   | u32       | Pinball Zone
+| 0x20   | u32       | 40 Below Fridge
+| 0x24   | u32       | Toy Block Tower
+| 0x28   | u32       | The Big Board
+| 0x2C   | u32       | Doodle Woods
+| 0x30   | u32       | Domino Row
+| 0x34   | u32       | Crescent Moon Village
+| 0x38   | u32       | Arabian Night
+| 0x3C   | u32       | Hotel Horror
+| 0x40   | u32       | Fiery Cavern
+| 0x44   | u32       | Emerald Passage Boss Corridor
+| 0x48   | u32       | Ruby Passage Boss Corridor
+| 0x4C   | u32       | Topaz Passage Boss Corridor
+| 0x50   | u32       | Sapphire Passage Boss Corridor
+| 0x54   | u32       | Golden Passage Boss Corridor
+| 0x58   | u32       | (?) Entry Passage Boss Corridor
+| 0x5C   | u32       | Golden Passage
+
 ### Pointers for map entrance lists
 
 They start from 0x0878F21C and point to map entrance lists.
@@ -232,13 +263,13 @@ They start from 0x0878F21C and point to map entrance lists.
 | 0x38   | u32       | Arabian Night
 | 0x3C   | u32       | Hotel Horror
 | 0x40   | u32       | Fiery Cavern
-| 0x44   | u32       | (?) Some boss level
-| 0x48   | u32       | (?) Some boss level
-| 0x4C   | u32       | (?) Some boss level
-| 0x50   | u32       | (?) Some boss level
-| 0x54   | u32       | (?) Some boss level
-| 0x58   | u32       | (?) Some boss level
-| 0x5C   | u32       | (?) Some boss level
+| 0x44   | u32       | (?) Emerald Passage Boss Corridor
+| 0x48   | u32       | (?) Ruby Passage Boss Corridor
+| 0x4C   | u32       | (?) Topaz Passage Boss Corridor
+| 0x50   | u32       | (?) Sapphire Passage Boss Corridor
+| 0x54   | u32       | (?) Golden Passage Boss Corridor
+| 0x58   | u32       | (?) Entry Passage Boss Corridor
+| 0x5C   | u32       | (?) Golden Passage
 
 ### Map entrance list
 
@@ -1160,8 +1191,6 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 | **9x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
 | **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
 | **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
-
-
 
 
 # TODOs
