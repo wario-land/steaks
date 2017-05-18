@@ -1198,6 +1198,42 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 | **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
 
 
+## Entering the debug mode in-game
+
+This disassembled code below suggests that it might be possible to activate the debug mode inside the game without any memory poking or emulator cheat codes. I have yet no idea how.
+
+```
+08079CB4 4903     ldr     r1,=#0x3000C3C
+08079CB6 2008     mov     r0,#0x8
+08079CB8 E328     b       #0x807A30C
+...
+
+08079CDC 4903     ldr     r1,=#0x3000C3C
+08079CDE 2008     mov     r0,#0x8
+08079CE0 E314     b       #0x807A30C
+...
+
+08079D04 4903     ldr     r1,=#0x3000C3C
+08079D06 2008     mov     r0,#0x8
+08079D08 E300     b       #0x807A30C
+...
+
+08079D2C 4903     ldr     r1,=#0x3000C3C
+08079D2E 2008     mov     r0,#0x8
+08079D30 E2EC     b       #0x807A30C
+...
+
+0807A30C 8008     strh    r0,[r1]  ; <- Here sets the debug mode
+0807A30E 8820     ldrh    r0,[r4]
+0807A310 4328     orr     r0,r5
+0807A312 8020     strh    r0,[r4]
+0807A314 E029     b       #0x807A36A
+...
+
+0807A36A F000FCB7 bl      #0x807ACDC
+...
+```
+
 ## Interesting things I found
 
 * In the Hall of Hieroglyphs level the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
@@ -1211,7 +1247,7 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 * Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
 * Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
 * Starting from 0x083B14F0 there are 32 bytes long records. Connected somehow to the entities.
-* Starting from 0x0878F714 there are around 90 pointers what defines what kind of particles are created when something is collected or broken.
+* Starting from 0x0878F714 there are around 90 pointers what sdefines what kind of particles are created when something is collected or broken.
 * Starting from 0x0x78F5A4 there are around 20 pointers what might define tile property like things (ability to break and collect things, etc.).
 
 
