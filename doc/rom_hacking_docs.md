@@ -271,6 +271,10 @@ They start from 0x0878F21C and point to map entrance lists.
 | 0x58   | u32       | (?) Entry Passage Boss Corridor
 | 0x5C   | u32       | (?) Golden Passage
 
+### Pointers for yet unknown map related things
+
+They start from 0x0878F540, 25 pointers (same order as the previous pointers). I have no idea where they point to but it's somehow related to the camera or the map scrolling.
+
 ### Map entrance list
 
 The data from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records.
