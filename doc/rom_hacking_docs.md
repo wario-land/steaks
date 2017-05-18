@@ -1211,6 +1211,8 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 * Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
 * Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
 * Starting from 0x083B14F0 there are 32 bytes long records. Connected somehow to the entities.
+* Starting from 0x0878F714 there are around 90 pointers what defines what kind of particles are created when something is collected or broken.
+* Starting from 0x0x78F5A4 there are around 20 pointers what might define tile property like things (ability to break and collect things, etc.).
 
 
 - *xnagytibor*
