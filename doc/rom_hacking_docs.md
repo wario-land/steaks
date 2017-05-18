@@ -1137,7 +1137,8 @@ Note about getting music indices:
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u32       | Track count
+| 0x00   | u16       | Track count
+| 0x02   | u16       | (?)
 | 0x04   | u32       | Track #1 data pointer
 | 0x08   | u32       | Track #2 data pointer
 | ...    | ...       | ...
