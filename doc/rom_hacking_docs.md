@@ -1198,6 +1198,7 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 
 * In the Hall of Hieroglyphs level the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
 * The Hotel Horror level may preceeded the Fiery Cavern level. In the ROM it always does.
+* Wario used to pose with hookers at the credits. The gfx still present in the ROM (0x08779550/0x08779530, 0x0877D170/0x0877D150)
 
 # TODOs
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
