@@ -1194,6 +1194,11 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 | **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
 
 
+## Interesting things I found
+
+* In the Hall of Hieroglyphs level the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
+* The Hotel Horror level may preceeded the Fiery Cavern level. In the ROM it always does.
+
 # TODOs
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
 * Another passage destination map: 0x08639068 + (i * 12), First byte: destination level index
