@@ -1143,8 +1143,9 @@ Note about getting music indices:
 | ------ | --------- | -----------
 | 0x00   | u16       | Track count
 | 0x02   | u16       | (?)
-| 0x04   | u32       | Track #1 data pointer
-| 0x08   | u32       | Track #2 data pointer
+| 0x04   | u32       | (?) Soundbank pointer
+| 0x08   | u32       | Track #1 data pointer
+| 0x0C   | u32       | Track #2 data pointer
 | ...    | ...       | ...
 
 ## Text encoding
