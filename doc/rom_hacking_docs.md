@@ -1234,6 +1234,15 @@ This disassembled code below suggests that it might be possible to activate the 
 ...
 ```
 
+The following code turns **off** the debug mode:
+
+```
+0801D32C 4816     ldr     r0,=#0x3000C3C
+0801D32E 2102     mov     r1,#0x2
+0801D330 8001     strh    r1,[r0]
+```
+
+
 ## Interesting things I found
 
 * In the Hall of Hieroglyphs level the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
