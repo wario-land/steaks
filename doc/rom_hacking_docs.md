@@ -1150,9 +1150,11 @@ Note about getting music indices:
 
 ## Demo playback data
 
-Two event stream (might be separated as press and release events). Events are encoded as an u16. The data are copied from ROM to 0x03002EC8 and 0x03002CC8 for playback.
+The data of each demo recording are separated into two u16 arrays: one for button states and one for timings.
 
-There are two pointer tables pointing to the playback data: 0x0878F5F4, 0x0878F634
+There are two pointer tables:
+* The pointers at 0x0878F5F4 points to button state data. Copied to 0x03002CC8 for playback.
+* The pointers at 0x0878F634 points to timing data. The timing might be given in frames. Copied to 0x03002EC8 for playback.
 
 | Offset | Data type | Demo level
 | ------ | --------- | ----------
@@ -1172,6 +1174,19 @@ There are two pointer tables pointing to the playback data: 0x0878F5F4, 0x0878F6
 | 0x34   | u32       | Arabian Night
 | 0x38   | u32       | Fiery Cavern
 | 0x3C   | u32       | Hotel Horror
+
+| Button state | Effect
+| ------------ | ------
+| 0x0001       | A
+| 0x0002       | B
+| 0x0004       | (?)
+| 0x0008       | (?)
+| 0x0010       | Right
+| 0x0020       | Left
+| 0x0040       | Up
+| 0x0080       | Down
+| 0x0100       | (?)
+| ...          | ...
 
 ## Text encoding
 TODO: Import the text tables I reversed several years ago under my prev nickname.
