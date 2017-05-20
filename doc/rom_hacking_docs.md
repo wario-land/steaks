@@ -1150,26 +1150,28 @@ Note about getting music indices:
 
 ## Demo playback data
 
-Two event stream (might be separated as press and release events). Events are encoded as an u16. The streams are copied from ROM to 0x03002EC8 and 0x03002CC8 for playback.
+Two event stream (might be separated as press and release events). Events are encoded as an u16. The data are copied from ROM to 0x03002EC8 and 0x03002CC8 for playback.
 
-| Level               | Events #1  | Events #2
-| ------------------- | ---------- | ----------
-| Hall of Hieroglyphs | 0x083FDC2C | 0x083FDA2C
-| Palm Tree Paradise  | 0x083FDFBC | 0x083FDE2C
-| Wildflower Fields   |  |
-| Mystic Lake         |  |
-| Monsoon Jungle      |  |
-| Cractus             |  |
-| The Curious Factory |  |
-| 40 Below Fridge     |  |
-| Pinball Zone        |  |
-| Aerodent            |  |
-| Toy Block Tower     |  |
-| Doodle Woods        |  |
-| Domino Row          |  |
-| Arabian Night       |  |
-| Fiery Cavern        |  |
-| Hotel Horror        |  |
+There are two pointer tables pointing to the playback data: 0x0878F5F4, 0x0878F634
+
+| Offset | Data type | Demo level
+| ------ | --------- | ----------
+| 0x00   | u32       | Hall of Hieroglyphs
+| 0x04   | u32       | Palm Tree Paradise
+| 0x08   | u32       | Wildflower Fields
+| 0x0C   | u32       | Mystic Lake
+| 0x10   | u32       | Monsoon Jungle
+| 0x14   | u32       | Cractus
+| 0x18   | u32       | The Curious Factory
+| 0x1C   | u32       | 40 Below Fridge
+| 0x20   | u32       | Pinball Zone
+| 0x24   | u32       | Aerodent
+| 0x28   | u32       | Toy Block Tower
+| 0x2C   | u32       | Doodle Woods
+| 0x30   | u32       | Domino Row
+| 0x34   | u32       | Arabian Night
+| 0x38   | u32       | Fiery Cavern
+| 0x3C   | u32       | Hotel Horror
 
 ## Text encoding
 TODO: Import the text tables I reversed several years ago under my prev nickname.
