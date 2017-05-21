@@ -1261,6 +1261,73 @@ Starts from 0x0864C758, each string is 26 character long, left and right padded 
 | 0x0C  | JP       | サウンドルーム
 | 0x0D  | EN       | Sound Room
 
+### Stage names
+
+Starts from 0x0865CEC4, same format as the passage names.
+
+| Index | Language | Value
+| ----- | -------- | -----
+| 0x00  | JP       | はじまりのいせき
+| 0x01  | EN       | Hall of Hieroglyphs
+| 0x02  | JP       | さいしょのボス ピンキー
+| 0x03  | EN       | Spoiled Rotten
+| 0x04  | JP       | ミニゲームやさん
+| 0x05  | EN       | Mini-Game Shop
+| 0x06  | JP       | ヤシのきじま
+| 0x07  | EN       | Palm Tree Paradise
+| 0x08  | JP       | おはなばたけ
+| 0x09  | EN       | Wildflower Fields
+| 0x0A  | JP       | なぞのちていこ
+| 0x0B  | EN       | Mystic Lake
+| 0x0C  | JP       | あめのジャングル
+| 0x0D  | EN       | Monsoon Jungle
+| 0x0E  | JP       | みどりのボス フラワナ
+| 0x0F  | EN       | Cractus
+| 0x10  | JP       | ミニゲームやさん
+| 0x11  | EN       | Mini-Game Shop
+| 0x12  | JP       | あやしいこうじょう
+| 0x13  | EN       | The Curious Factory
+| 0x14  | JP       | ひみつのはいきぶつしょりじょう
+| 0x15  | EN       | The Toxic Landfill
+| 0x16  | JP       | -40℃のれいぞうこ
+| 0x17  | EN       | 40 Below Fridge
+| 0x18  | JP       | ピンボールタワー
+| 0x19  | EN       | Pinball Zone
+| 0x1A  | JP       | あかのボス コンダラー
+| 0x1B  | EN       | Cuckoo Condor
+| 0x1C  | JP       | ミニゲームやさん
+| 0x1D  | EN       | Mini-Game Shop
+| 0x1E  | JP       | つみきのおしろ
+| 0x1F  | EN       | Toy Block Tower
+| 0x20  | JP       | すごろくのくに
+| 0x21  | EN       | The Big Board
+| 0x22  | JP       | らくがきのもり
+| 0x23  | EN       | Doodle Woods
+| 0x24  | JP       | ドミノストリート
+| 0x25  | EN       | Domino Row
+| 0x26  | JP       | きいろのボス シッキー
+| 0x27  | EN       | Aerodent
+| 0x28  | JP       | ミニゲームやさん
+| 0x29  | EN       | Mini-Game Shop
+| 0x2A  | JP       | みかづきのゴーストタウン
+| 0x2B  | EN       | Crescent Moon Village
+| 0x2C  | JP       | アラビアンナイト
+| 0x2D  | EN       | Arabian Night
+| 0x2E  | JP       | ほのおのどうくつ
+| 0x2F  | EN       | Fiery Cavern
+| 0x30  | JP       | ホラーマンション
+| 0x31  | EN       | Hotel Horror
+| 0x32  | JP       | あおのボス キャバット
+| 0x33  | EN       | Catbat
+| 0x34  | JP       | ミニゲームやさん
+| 0x35  | EN       | Mini-Game Shop
+| 0x36  | JP       | さいごのつうろ
+| 0x37  | EN       | Golden Passage
+| 0x38  | JP       | ピラミッドのぬし ヨーキ
+| 0x39  | EN       | Golden Diva
+| 0x3A  | JP       | ミニゲームやさん
+| 0x3B  | EN       | Mini-Game Shop
+
 ## Entering the debug mode in-game
 
 This disassembled code below suggests that it might be possible to activate the debug mode inside the game without any memory poking or emulator cheat codes. I have yet no idea how.
