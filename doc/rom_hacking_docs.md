@@ -1238,6 +1238,28 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 | **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
 | **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
 
+## Text tables
+
+### Passage names
+
+Starts from 0x0864C758, each string is 26 character long, left and right padded with 0xFF to be centered.
+
+| Index | Language | Value
+| ----- | -------- | -----
+| 0x00  | JP       | さいしょのつうろ
+| 0x01  | EN       | Entry Passage
+| 0x02  | JP       | みどりのつうろ
+| 0x03  | EN       | Emerald Passage
+| 0x04  | JP       | あかのつうろ
+| 0x05  | EN       | Ruby Passage
+| 0x06  | JP       | きいろのつうろ
+| 0x07  | EN       | Topaz Passage
+| 0x08  | JP       | あおのつうろ
+| 0x09  | EN       | Sapphire Passage
+| 0x0A  | JP       | おうごんのピラミッド
+| 0x0B  | EN       | Golden Pyramid
+| 0x0C  | JP       | サウンドルーム
+| 0x0D  | EN       | Sound Room
 
 ## Entering the debug mode in-game
 
