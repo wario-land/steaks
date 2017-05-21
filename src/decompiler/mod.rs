@@ -27,9 +27,9 @@ fn decompile_map(rom_data: &[u8], offset: usize) -> Result<Map, &'static str> {
 
     let map = Map {
         tileset: tileset,
-        normal_entities: decompile_entities(rom_data, offset_normal).unwrap(),
-        hard_entities: decompile_entities(rom_data, offset_hard).unwrap(),
-        shard_entities: decompile_entities(rom_data, offset_shard).unwrap(),
+        entities_normal: decompile_entities(rom_data, offset_normal).unwrap(),
+        entities_hard: decompile_entities(rom_data, offset_hard).unwrap(),
+        entities_shard: decompile_entities(rom_data, offset_shard).unwrap(),
     };
 
     Ok(map)
