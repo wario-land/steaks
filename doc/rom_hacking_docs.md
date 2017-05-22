@@ -73,46 +73,46 @@ The game stores the tileset index of the current map at the RAM location 0x03000
 | 0x05 | The Big Board?
 | 0x06 | Wildflower Fields
 | 0x07 | Toy Block Tower
-| 0x08 | Factory
+| 0x08 | The Curious Factory
 | 0x09 | Wildflower Underground?
 | 0x0A | Wildflower/Jungle?
 | 0x0B | Underwater?
 | 0x0C | Toy Block Tower
 | 0x0D | Toy Block Tower
 | 0x0E | Toy Block Tower (purple)
-| 0x0F | Doodle
-| 0x10 | Dominoes
+| 0x0F | Doodle Woods
+| 0x10 | Domino Row
 | 0x11 | Hall of Hieroglyphs
 | 0x12 | Haunte House? (plus debug tiles)
-| 0x13 | Crescent Moon Village outside
+| 0x13 | Crescent Moon Village (outside)
 | 0x14 | Haunted House?
-| 0x15 | Arabian outside
-| 0x16 | Arabian inside
-| 0x17 | Arabian
-| 0x18 | Arabian
-| 0x19 | Arabian
-| 0x1A | Dominoes (blue)
-| 0x1B | Dominoes (purple)
-| 0x1C | Dominoes (teal)
-| 0x1D | Factory
-| 0x1E | Factory
+| 0x15 | Arabian Night (outside)
+| 0x16 | Arabian Night (inside)
+| 0x17 | Arabian Night
+| 0x18 | Arabian Night
+| 0x19 | Arabian Night
+| 0x1A | Domino Row (blue)
+| 0x1B | Domino Row (purple)
+| 0x1C | Domino Row (teal)
+| 0x1D | The Curious Factory
+| 0x1E | The Curious Factory
 | 0x1F | Jungle
-| 0x20 | Factory
-| 0x21 | Junkyard
-| 0x22 | Junkyard
-| 0x23 | Pinball
-| 0x24 | Pinball
-| 0x25 | Pinball (with Gorilla)
+| 0x20 | The Curious Factory
+| 0x21 | The Toxic Landfill
+| 0x22 | The Toxic Landfill
+| 0x23 | Pinball Zone
+| 0x24 | Pinball Zone
+| 0x25 | Pinball Zone (with Gorilla)
 | 0x26 | Jungle
 | 0x27 | 40 Below Fridge?
 | 0x28 | Jungle
 | 0x29 | Jungle caves
-| 0x2A | Hotel
-| 0x2B | Hotel
-| 0x2C | Hotel
-| 0x2D | Hotel
-| 0x2E | Hotel
-| 0x2F | Hotel (outside)
+| 0x2A | Hotel Horror
+| 0x2B | Hotel Horror
+| 0x2C | Hotel Horror
+| 0x2D | Hotel Horror
+| 0x2E | Hotel Horror
+| 0x2F | Hotel Horror (outside)
 | 0x30 | Unused in-game (Haunted House)
 | 0x31 | Unused in-game (Haunted House)
 | 0x32 | Unused in-game (Cardboard)
@@ -120,21 +120,21 @@ The game stores the tileset index of the current map at the RAM location 0x03000
 | 0x34 | Caves
 | 0x35 | Jungle
 | 0x36 | Caves
-| 0x37 | Lava level
+| 0x37 | Fiery Cavern (lava)
 | 0x38 | Caves
 | 0x39 | Golden Passage
-| 0x3A | Hotel
-| 0x3B | Hotel
-| 0x3C | Hotel
-| 0x3D | Hotel
+| 0x3A | Hotel Horror
+| 0x3B | Hotel Horror
+| 0x3C | Hotel Horror
+| 0x3D | Hotel Horror
 | 0x3E | 40 Below Fridge
-| 0x3F | Factory
-| 0x40 | Factory
-| 0x41 | Arabian
-| 0x42 | Arabian?
+| 0x3F | The Curious Factory
+| 0x40 | The Curious Factory
+| 0x41 | Arabian Night
+| 0x42 | Arabian Night?
 | 0x43 | Boss corridor
 | 0x44 | Boss room? (golden)
-| 0x45 | Frozen lava level
+| 0x45 | Fiery Cavern (frozen)
 | 0x46 | Lava level
 | 0x47 | Hall of Hieroglyphs
 | 0x48 | Boss room?
@@ -147,16 +147,16 @@ The game stores the tileset index of the current map at the RAM location 0x03000
 | 0x4F | Boss room?
 | 0x50 | Hall of Hieroglyphs
 | 0x51 | Jungle
-| 0x52 | Wildflower
+| 0x52 | Wildflower Fields
 | 0x53 | Crescent Moon Village
 | 0x54 | Crescent Moon Village
 | 0x55 | Crescent Moon Village
 | 0x56 | Toy Block Tower
-| 0x57 | Pinball
+| 0x57 | Pinball Zone
 | 0x58 | Bonus room
 | 0x59 | Bonus room
 | 0x5A | Final level
-| 0x5B | The Big Board end
+| 0x5B | The Big Board (end)
 
 ### Tileset record table
 
@@ -211,9 +211,9 @@ It seems like every map has a local selection of entities from a global list. En
 
 ### Pointers for map records
 
-They start at 0x0878F280 and they point the first map record each the level.
+They start at 0x0878F280 and they point the first map record each stage.
 
-| Offset | Data type | Level
+| Offset | Data type | Stage
 | ------ | --------- | -----
 | 0x00   | u32       | Hall of Hieroglyphs
 | 0x04   | u32       | Palm Tree Paradise
@@ -244,7 +244,7 @@ They start at 0x0878F280 and they point the first map record each the level.
 
 They start from 0x0878F21C and point to map entrance lists.
 
-| Offset | Data type | Level
+| Offset | Data type | Stage
 | ------ | --------- | -----
 | 0x00   | u32       | Hall of Hieroglyphs
 | 0x04   | u32       | Palm Tree Paradise
@@ -277,7 +277,7 @@ They start from 0x0878F540, 25 pointers (same order as the previous pointers). I
 
 ### Map entrance list
 
-The data from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates levels. 660 records.
+The data from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates stages. 660 records.
 
 Note: from 0x0878E780 to 0x0878F970 there are several of pointers pointing to these records.
 
@@ -1244,89 +1244,89 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 
 Starts from 0x0864C758, each string is 26 character long, left and right padded with 0xFF to be centered.
 
-| Index | Language | Value
-| ----- | -------- | -----
-| 0x00  | JP       | さいしょのつうろ
-| 0x01  | EN       | Entry Passage
-| 0x02  | JP       | みどりのつうろ
-| 0x03  | EN       | Emerald Passage
-| 0x04  | JP       | あかのつうろ
-| 0x05  | EN       | Ruby Passage
-| 0x06  | JP       | きいろのつうろ
-| 0x07  | EN       | Topaz Passage
-| 0x08  | JP       | あおのつうろ
-| 0x09  | EN       | Sapphire Passage
-| 0x0A  | JP       | おうごんのピラミッド
-| 0x0B  | EN       | Golden Pyramid
-| 0x0C  | JP       | サウンドルーム
-| 0x0D  | EN       | Sound Room
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x0864C758 | JP       | さいしょのつうろ
+| 0x01  | 0x0864C772 | EN       | Entry Passage
+| 0x02  | 0x0864C78C | JP       | みどりのつうろ
+| 0x03  | 0x0864C7A6 | EN       | Emerald Passage
+| 0x04  | 0x0864C7C0 | JP       | あかのつうろ
+| 0x05  | 0x0864C7DA | EN       | Ruby Passage
+| 0x06  | 0x0864C7F4 | JP       | きいろのつうろ
+| 0x07  | 0x0864C80E | EN       | Topaz Passage
+| 0x08  | 0x0864C828 | JP       | あおのつうろ
+| 0x09  | 0x0864C842 | EN       | Sapphire Passage
+| 0x0A  | 0x0864C85C | JP       | おうごんのピラミッド
+| 0x0B  | 0x0864C876 | EN       | Golden Pyramid
+| 0x0C  | 0x0864C890 | JP       | サウンドルーム
+| 0x0D  | 0x0864C8AA | EN       | Sound Room
 
 ### Stage names
 
 Starts from 0x0865CEC4, same format as the passage names.
 
-| Index | Language | Value
-| ----- | -------- | -----
-| 0x00  | JP       | はじまりのいせき
-| 0x01  | EN       | Hall of Hieroglyphs
-| 0x02  | JP       | さいしょのボス ピンキー
-| 0x03  | EN       | Spoiled Rotten
-| 0x04  | JP       | ミニゲームやさん
-| 0x05  | EN       | Mini-Game Shop
-| 0x06  | JP       | ヤシのきじま
-| 0x07  | EN       | Palm Tree Paradise
-| 0x08  | JP       | おはなばたけ
-| 0x09  | EN       | Wildflower Fields
-| 0x0A  | JP       | なぞのちていこ
-| 0x0B  | EN       | Mystic Lake
-| 0x0C  | JP       | あめのジャングル
-| 0x0D  | EN       | Monsoon Jungle
-| 0x0E  | JP       | みどりのボス フラワナ
-| 0x0F  | EN       | Cractus
-| 0x10  | JP       | ミニゲームやさん
-| 0x11  | EN       | Mini-Game Shop
-| 0x12  | JP       | あやしいこうじょう
-| 0x13  | EN       | The Curious Factory
-| 0x14  | JP       | ひみつのはいきぶつしょりじょう
-| 0x15  | EN       | The Toxic Landfill
-| 0x16  | JP       | -40℃のれいぞうこ
-| 0x17  | EN       | 40 Below Fridge
-| 0x18  | JP       | ピンボールタワー
-| 0x19  | EN       | Pinball Zone
-| 0x1A  | JP       | あかのボス コンダラー
-| 0x1B  | EN       | Cuckoo Condor
-| 0x1C  | JP       | ミニゲームやさん
-| 0x1D  | EN       | Mini-Game Shop
-| 0x1E  | JP       | つみきのおしろ
-| 0x1F  | EN       | Toy Block Tower
-| 0x20  | JP       | すごろくのくに
-| 0x21  | EN       | The Big Board
-| 0x22  | JP       | らくがきのもり
-| 0x23  | EN       | Doodle Woods
-| 0x24  | JP       | ドミノストリート
-| 0x25  | EN       | Domino Row
-| 0x26  | JP       | きいろのボス シッキー
-| 0x27  | EN       | Aerodent
-| 0x28  | JP       | ミニゲームやさん
-| 0x29  | EN       | Mini-Game Shop
-| 0x2A  | JP       | みかづきのゴーストタウン
-| 0x2B  | EN       | Crescent Moon Village
-| 0x2C  | JP       | アラビアンナイト
-| 0x2D  | EN       | Arabian Night
-| 0x2E  | JP       | ほのおのどうくつ
-| 0x2F  | EN       | Fiery Cavern
-| 0x30  | JP       | ホラーマンション
-| 0x31  | EN       | Hotel Horror
-| 0x32  | JP       | あおのボス キャバット
-| 0x33  | EN       | Catbat
-| 0x34  | JP       | ミニゲームやさん
-| 0x35  | EN       | Mini-Game Shop
-| 0x36  | JP       | さいごのつうろ
-| 0x37  | EN       | Golden Passage
-| 0x38  | JP       | ピラミッドのぬし ヨーキ
-| 0x39  | EN       | Golden Diva
-| 0x3A  | JP       | ミニゲームやさん
-| 0x3B  | EN       | Mini-Game Shop
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x0865CEC4 | JP       | はじまりのいせき
+| 0x01  | 0x0865CEDE | EN       | Hall of Hieroglyphs
+| 0x02  | 0x0865CEF8 | JP       | さいしょのボス ピンキー
+| 0x03  | 0x0865CF12 | EN       | Spoiled Rotten
+| 0x04  | 0x0865CF2C | JP       | ミニゲームやさん
+| 0x05  | 0x0865CF46 | EN       | Mini-Game Shop
+| 0x06  | 0x0865CF60 | JP       | ヤシのきじま
+| 0x07  | 0x0865CF7A | EN       | Palm Tree Paradise
+| 0x08  | 0x0865CF94 | JP       | おはなばたけ
+| 0x09  | 0x0865CFAE | EN       | Wildflower Fields
+| 0x0A  | 0x0865CFC8 | JP       | なぞのちていこ
+| 0x0B  | 0x0865CFE2 | EN       | Mystic Lake
+| 0x0C  | 0x0865CFFC | JP       | あめのジャングル
+| 0x0D  | 0x0865D016 | EN       | Monsoon Jungle
+| 0x0E  | 0x0865D030 | JP       | みどりのボス フラワナ
+| 0x0F  | 0x0865D04A | EN       | Cractus
+| 0x10  | 0x0865D064 | JP       | ミニゲームやさん
+| 0x11  | 0x0865D07E | EN       | Mini-Game Shop
+| 0x12  | 0x0865D098 | JP       | あやしいこうじょう
+| 0x13  | 0x0865D0B2 | EN       | The Curious Factory
+| 0x14  | 0x0865D0CC | JP       | ひみつのはいきぶつしょりじょう
+| 0x15  | 0x0865D0E6 | EN       | The Toxic Landfill
+| 0x16  | 0x0865D100 | JP       | -40℃のれいぞうこ
+| 0x17  | 0x0865D11A | EN       | 40 Below Fridge
+| 0x18  | 0x0865D134 | JP       | ピンボールタワー
+| 0x19  | 0x0865D14E | EN       | Pinball Zone
+| 0x1A  | 0x0865D168 | JP       | あかのボス コンダラー
+| 0x1B  | 0x0865D182 | EN       | Cuckoo Condor
+| 0x1C  | 0x0865D19C | JP       | ミニゲームやさん
+| 0x1D  | 0x0865D1B6 | EN       | Mini-Game Shop
+| 0x1E  | 0x0865D1D0 | JP       | つみきのおしろ
+| 0x1F  | 0x0865D1EA | EN       | Toy Block Tower
+| 0x20  | 0x0865D204 | JP       | すごろくのくに
+| 0x21  | 0x0865D21E | EN       | The Big Board
+| 0x22  | 0x0865D238 | JP       | らくがきのもり
+| 0x23  | 0x0865D252 | EN       | Doodle Woods
+| 0x24  | 0x0865D26C | JP       | ドミノストリート
+| 0x25  | 0x0865D286 | EN       | Domino Row
+| 0x26  | 0x0865D2A0 | JP       | きいろのボス シッキー
+| 0x27  | 0x0865D2BA | EN       | Aerodent
+| 0x28  | 0x0865D2D4 | JP       | ミニゲームやさん
+| 0x29  | 0x0865D2EE | EN       | Mini-Game Shop
+| 0x2A  | 0x0865D308 | JP       | みかづきのゴーストタウン
+| 0x2B  | 0x0865D322 | EN       | Crescent Moon Village
+| 0x2C  | 0x0865D33C | JP       | アラビアンナイト
+| 0x2D  | 0x0865D356 | EN       | Arabian Night
+| 0x2E  | 0x0865D370 | JP       | ほのおのどうくつ
+| 0x2F  | 0x0865D38A | EN       | Fiery Cavern
+| 0x30  | 0x0865D3A4 | JP       | ホラーマンション
+| 0x31  | 0x0865D3BE | EN       | Hotel Horror
+| 0x32  | 0x0865D3D8 | JP       | あおのボス キャバット
+| 0x33  | 0x0865D3F2 | EN       | Catbat
+| 0x34  | 0x0865D40C | JP       | ミニゲームやさん
+| 0x35  | 0x0865D426 | EN       | Mini-Game Shop
+| 0x36  | 0x0865D440 | JP       | さいごのつうろ
+| 0x37  | 0x0865D45A | EN       | Golden Passage
+| 0x38  | 0x0865D474 | JP       | ピラミッドのぬし ヨーキ
+| 0x39  | 0x0865D48E | EN       | Golden Diva
+| 0x3A  | 0x0865D4A8 | JP       | ミニゲームやさん
+| 0x3B  | 0x0865D4C2 | EN       | Mini-Game Shop
 
 ## Entering the debug mode in-game
 
@@ -1375,12 +1375,12 @@ The following code turns **off** the debug mode:
 
 ## Interesting things I found
 
-* In the Hall of Hieroglyphs level the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
-* The Hotel Horror level may preceeded the Fiery Cavern level. In the ROM it always does.
+* In the Hall of Hieroglyphs stage the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
+* The Hotel Horror stage may preceeded the Fiery Cavern stage. In the ROM it always does.
 
 # TODOs
 * Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
-* Another passage destination map: 0x08639068 + (i * 12), First byte: destination level index
+* Another passage destination map: 0x08639068 + (i * 12), First byte: destination stage index
 * Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
 * Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
 * Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
