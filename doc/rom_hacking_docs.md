@@ -1256,7 +1256,7 @@ Two pointer tables for lyrics, one for Japanese (0x0863D921, 10 pointers) and on
 
 ### Passage names
 
-Starts from 0x0864C758, each string is 26 character long, left and right padded with 0xFF to be centered.
+Starts from 0x0864C758, each string is 26 character long, left and right padded with 0xFF to be centered. There's a pointer list at 0x0863956C for the Japanese, 0x08639588 for the English names.
 
 | Index | Offset     | Language | Value
 | ----- | ---------- | -------- | -----
@@ -1278,6 +1278,8 @@ Starts from 0x0864C758, each string is 26 character long, left and right padded 
 ### Stage names
 
 Starts from 0x0865CEC4, same format as the passage names.
+
+Two pointer lists referring to them: 0x0863A31C for the Japanese names, 0x0863A3AC for the English ones.
 
 | Index | Offset     | Language | Value
 | ----- | ---------- | -------- | -----

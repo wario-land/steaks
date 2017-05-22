@@ -67,6 +67,10 @@
 0878f540 rom_ptrs_unknown
 0878f5f4 rom_ptrs_demo_buttons
 0878f634 rom_ptrs_demo_timings
+0863956c rom_ptrs_passage_names_jp
+08639588 rom_ptrs_passage_names_en
+0863a31c rom_ptrs_stage_names_jp
+0863a3ac rom_ptrs_stage_names_en
 
 ; Passage names
 0864c758 rom_txt_jp_entry_passage
