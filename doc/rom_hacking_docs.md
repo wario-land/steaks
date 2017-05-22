@@ -1238,6 +1238,20 @@ TODO: Import the text tables I reversed several years ago under my prev nickname
 | **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
 | **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
 
+## CDs
+
+### Music indices
+
+There's a u16 table at 0x0863D85C containing music indexes for each CD. 17 entries. The first entry points to the Wario's Workout theme, then the music indices follows.
+
+### Song titles
+
+Two pointer tables containing 16 pointers each, 0x0863D8E0 for English and 0x0863D8A0 for Japanese.
+
+## Karaoke
+
+Two pointer tables for lyrics, one for Japanese (0x0863D921, 10 pointers) and one for English (0x0863D948 , 13 pointers).
+
 ## Text tables
 
 ### Passage names
@@ -1366,6 +1380,38 @@ Starts from 0x086CB488, same 26 character format as before.
 | 0x1D  | 0x086CB77A | EN       | You and Your Shoes
 | 0x1E  | 0x086CB794 | JP       | エーテルおじさん と プラナリア
 | 0x1F  | 0x086CB7AE | EN       | Mr. Ether & Planaria
+
+### Karaoke
+
+The lyrics for the Sound Room karaoke starts at 0x086D3108. The titles are centered, the lyrics are aligned to the left.
+
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x086D3108 | JP       | Sunny Side up
+| 0x01  | 0x086D3122 | JP       | ウクレレ みたいな たびを しよー
+| 0x02  | 0x086D313C | JP       | あるいて いこう つきの かけらを ひろいながら
+| 0x03  | 0x086D3156 | JP       | ちずの かわりに キャンバス
+| 0x04  | 0x086D3170 | JP       | にじの しずくで (そめましょう)
+| 0x05  | 0x086D318A | JP       | ひのでに まにあうように
+| 0x06  | 0x086D31A4 | JP       | ぼやけた とけいは おいていこう
+| 0x07  | 0x086D31BE | JP       | うみに タメいき とかしーて
+| 0x08  | 0x086D31D8 | JP       | いしに こえを きざもーぉ
+| 0x09  | 0x086D31F2 | JP       | つきを スープに うかべたら
+| 0x0A  | 0x086D320C | JP       | ヒョウがらの くもが わらう
+| 0x0B  | 0x086D3226 | EN       | MEDAMAYAKI
+| 0x0C  | 0x086D3240 | EN       | UKURERE MITAINA
+| 0x0D  | 0x086D325A | EN       | TABIWO SHIYO
+| 0x0E  | 0x086D3274 | EN       | ARUITE IKO TSUKINO
+| 0x0F  | 0x086D328E | EN       | KAKERAWO HIROINAGARA
+| 0x10  | 0x086D32A8 | EN       | CHIZUNO KAWARINI KYANBASU
+| 0x11  | 0x086D32C2 | EN       | NIJINO SHIZUKUDE
+| 0x12  | 0x086D32DC | EN       | (SOMEMASHO)
+| 0x13  | 0x086D32F6 | EN       | HINODENI MANIAUYONI
+| 0x14  | 0x086D3310 | EN       | BOYAKETA TOKEIWA OITEKO
+| 0x15  | 0x086D332A | EN       | UMINI TAMEIKI TOKASHITE
+| 0x16  | 0x086D3344 | EN       | ISHINI KOEWO KIZAMO
+| 0x17  | 0x086D335E | EN       | TSUKIWO SUPUNI UKABETARA
+| 0x18  | 0x086D3378 | EN       | HYOUGARANO KUMOGA WARAU
 
 ## Entering the debug mode in-game
 
