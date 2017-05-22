@@ -25,6 +25,8 @@
 03001911 iram_heart_meter_increment
 03001914 iram_heart_gauge
 03001915 iram_heart_gauge_increment
+03002cc8 iram_demo_buttons
+03002ec8 iram_demo_timings
 
 ; Pause menu
 03004794 iram_pause_selection
@@ -56,6 +58,15 @@
 03004782 iram_soundroom_karaoke_singing
 03004783 iram_soundroom_karaoke_pitch
 03004784 iram_soundroom_karaoke_speed
+
+; Pointer tables
+0863d8a0 rom_ptrs_cd_titles_jp
+0863d8e0 rom_ptrs_cd_titles_en
+0863d921 rom_ptrs_karaoke_lyrics_jp
+0863d948 rom_ptrs_karaoke_lyrics_en
+0878f540 rom_ptrs_unknown
+0878f5f4 rom_ptrs_demo_buttons
+0878f634 rom_ptrs_demo_timings
 
 ; Passage names
 0864c758 rom_txt_jp_entry_passage
@@ -226,9 +237,6 @@
 0873d6e2 rom_txt_en_thank_you
 0873d716 rom_txt_en_go_play_some_mini_games
 0873d74a rom_txt_en_hmph
-
-; Text (Japanese)
-; TODO
 
 ; GFX
 08283f14 rom_pal_nintendo_logo
