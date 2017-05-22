@@ -1328,6 +1328,45 @@ Starts from 0x0865CEC4, same format as the passage names.
 | 0x3A  | 0x0865D4A8 | JP       | ミニゲームやさん
 | 0x3B  | 0x0865D4C2 | EN       | Mini-Game Shop
 
+### CD names
+
+Starts from 0x086CB488, same 26 character format as before.
+
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x086CB488 | JP       | あの ひつじかい に ついて しってる 2,3のこと
+| 0x01  | 0x086CB4A2 | EN       | About That Shepherd
+| 0x02  | 0x086CB4BC | JP       | その つぎに かわらない モノ
+| 0x03  | 0x086CB4D6 | EN       | Things That Never Change
+| 0x04  | 0x086CB4F0 | JP       | あした の けつあつ
+| 0x05  | 0x086CB50A | EN       | Tomorrow's Blood Pressure
+| 0x06  | 0x086CB524 | JP       | たちくらみ の むこうがわ
+| 0x07  | 0x086CB53E | EN       | Beyond the Headrush
+| 0x08  | 0x086CB558 | JP       | りゅうぼく と アイルランドいぬ
+| 0x09  | 0x086CB572 | EN       | Driftwood & the Island Dog
+| 0x0A  | 0x086CB58C | JP       | さいばんかん の あし
+| 0x0B  | 0x086CB5A6 | EN       | The Judge's Feet
+| 0x0C  | 0x086CB5C0 | JP       | つき の でんちゅう
+| 0x0D  | 0x086CB5DA | EN       | The Moon's Lamppost
+| 0x0E  | 0x086CB5F4 | JP       | ヤワラカイ こうら
+| 0x0F  | 0x086CB60E | EN       | Soft Shell
+| 0x10  | 0x086CB628 | JP       | やっぱり ねむいね……
+| 0x11  | 0x086CB642 | EN       | So Sleepy
+| 0x12  | 0x086CB65C | JP       | みぢかい ふとん
+| 0x13  | 0x086CB676 | EN       | The Short Futon
+| 0x14  | 0x086CB690 | JP       | アボカド ソング
+| 0x15  | 0x086CB6AA | EN       | Avocado Song
+| 0x16  | 0x086CB6C4 | JP       | ハエおとこ
+| 0x17  | 0x086CB6DE | EN       | Mr. Fly
+| 0x18  | 0x086CB6F8 | JP       | きのう の コトバ
+| 0x19  | 0x086CB712 | EN       | Yesterday's Words
+| 0x1A  | 0x086CB72C | JP       | おつかい
+| 0x1B  | 0x086CB746 | EN       | The Errand
+| 0x1C  | 0x086CB760 | JP       | きみ と クツ
+| 0x1D  | 0x086CB77A | EN       | You and Your Shoes
+| 0x1E  | 0x086CB794 | JP       | エーテルおじさん と プラナリア
+| 0x1F  | 0x086CB7AE | EN       | Mr. Ether & Planaria
+
 ## Entering the debug mode in-game
 
 This disassembled code below suggests that it might be possible to activate the debug mode inside the game without any memory poking or emulator cheat codes. I have yet no idea how.
