@@ -29,23 +29,68 @@
 | 0x09  | 0x086390D4 | Pinball Zone
 | 0x0A  | 0x086390E0 | 40 Below Fridge
 | 0x0B  | 0x086390EC | Cuckoo Condor
-| 0x0C  | 0x086390F8 | (?)
+| 0x0C  | 0x086390F8 | Mini-Game Shop
 | 0x0D  | 0x08639104 | Toy Block Tower
 | 0x0E  | 0x08639110 | The Big Board
 | 0x0F  | 0x0863911C | Doodle Woods
 | 0x10  | 0x08639128 | Domino Row
 | 0x11  | 0x08639134 | Aerodent
-| 0x12  | 0x08639140 | (?)
+| 0x12  | 0x08639140 | Mini-Game Shop
 | 0x13  | 0x0863914C | Crescent Moon Village
 | 0x14  | 0x08639158 | Arabian Night
 | 0x15  | 0x08639164 | Fiery Cavern
 | 0x16  | 0x08639170 | Hotel Horror
 | 0x17  | 0x0863917C | Catbat
-| 0x18  | 0x08639188 | (?)
+| 0x18  | 0x08639188 | Mini-Game Shop
 | 0x19  | 0x08639194 | Golden Diva
 | 0x1A  | 0x086391A0 | Spoiled Rotten
-| 0x1B  | 0x086391AC | (?)
+| 0x1B  | 0x086391AC | Debug Stage
 | 0x1C  | 0x086391B8 | Golden Passage
+
+## Stage header index table
+
+- Starts at: 0x086391C4
+- Record count: 36
+- Record type: u32
+
+| Index | Offset     | Description
+| ----- | ---------- | -----------
+| 0x00  | 0x086391C4 | Hall of Hieroglyphs
+| 0x01  | 0x086391C8 | *Null*
+| 0x02  | 0x086391CC | Debug Stage
+| 0x03  | 0x086391D0 | *Null*
+| 0x04  | 0x086391D4 | Spoiled Rotten
+| 0x05  | 0x086391D8 | Mini-Game Shop
+| 0x06  | 0x086391DC | Palm Tree Paradise
+| 0x07  | 0x086391E0 | Wildflower Fields
+| 0x08  | 0x086391E4 | Mystic Lake
+| 0x09  | 0x086391E8 | Monsoon Jungle
+| 0x0A  | 0x086391EC | Cractus
+| 0x0B  | 0x086391F0 | Mini-Game Shop
+| 0x0C  | 0x086391F4 | The Curious Factory
+| 0x0D  | 0x086391F8 | The Toxic Landfill
+| 0x0E  | 0x086391FC | Pinball Zone
+| 0x0F  | 0x08639200 | 40 Below Fridge
+| 0x10  | 0x08639204 | Cuckoo Condor
+| 0x11  | 0x08639208 | Mini-Game Shop
+| 0x12  | 0x0863920C | Toy Block Tower
+| 0x13  | 0x08639210 | The Big Board
+| 0x14  | 0x08639214 | Doodle Woods
+| 0x15  | 0x08639218 | Domino Row
+| 0x16  | 0x0863921C | Aerodent
+| 0x17  | 0x08639220 | Mini-Game Shop
+| 0x18  | 0x08639224 | Crescent Moon Village
+| 0x19  | 0x08639228 | Arabian Night
+| 0x1A  | 0x0863922C | Fiery Cavern
+| 0x1B  | 0x08639230 | Hotel Horror
+| 0x1C  | 0x08639234 | Catbat
+| 0x1D  | 0x08639238 | Mini-Game Shop
+| 0x1E  | 0x0863923C | Golden Passage
+| 0x1F  | 0x08639240 | *Null*
+| 0x20  | 0x08639244 | *Null*
+| 0x21  | 0x08639248 | *Null*
+| 0x22  | 0x0863924C | Golden Diva
+| 0x23  | 0x08639250 | Mini-Game Shop
 
 ## Maps
 

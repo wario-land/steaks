@@ -71,6 +71,11 @@
 0878f540 rom_ptrs_unknown
 0878f5f4 rom_ptrs_demo_buttons
 0878f634 rom_ptrs_demo_timings
+08639068 rom_ptrs_stage_headers
+
+; Indices
+086391c4 rom_idxs_stage_headers
+0863d85c rom_idxs_cd_sfx
 
 ; Passage names
 0864c758 rom_txt_jp_entry_passage
