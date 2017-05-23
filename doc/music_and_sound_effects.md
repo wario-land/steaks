@@ -6,9 +6,9 @@ The background music of the stages are defined in the warp table.
 
 ## SFX header table
 
-Starts at: 0x08098028
-Record count: 819
-Record length: 8 bytes
+- Starts at: 0x08098028
+- Record count: 819
+- Record length: 8 bytes
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
@@ -31,15 +31,15 @@ Record length: 8 bytes
 
 ## SFX soundbanks
 
-Starts at: 0x080957EC, 0x08095DEC, 0x080963E0, 0x080977F0
-Record length: 12 bytes
+- Starts at: 0x080957EC, 0x08095DEC, 0x080963E0, 0x080977F0
+- Record length: 12 bytes
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
 
 ## SFX samples
 
-Sample format: uncompressed signed 8-bit at 11025Hz/5512.5Hz
+- Sample format: uncompressed signed 8-bit at 11025Hz/5512.5Hz
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
@@ -870,9 +870,9 @@ Sample format: uncompressed signed 8-bit at 11025Hz/5512.5Hz
 
 ## Sound Room CD SFX index table
 
-Starts at: 0x0863D85C
-Record type: u32
-Record count: 17
+- Starts at: 0x0863D85C
+- Record type: u32
+- Record count: 17
 
 | Index | Offset     | Description
 | ----- | ---------- | -----------
@@ -895,5 +895,5 @@ Record count: 17
 | 0x10  | 0x0863D89C | Mr. Ether & Planaria
 
 ## TODO
-* Find out the soundbank and sample header formats.
-* Find out the track data format
+- Find out the soundbank and sample header formats.
+- Find out the track data format

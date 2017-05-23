@@ -44,4 +44,4 @@ The button states and timings are both defined as u16 arrays. The button state d
 | ...    | ...
 
 ## TODO
-* Where does the game define the stages, areas and starting coordinates of the demos?
+- Where does the game define the stages, areas and starting coordinates of the demos?

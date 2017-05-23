@@ -54,18 +54,16 @@ The following code turns **off** the debug mode:
 
 ## Interesting things I found
 
-* In the Hall of Hieroglyphs stage the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
-* The Hotel Horror stage may preceeded the Fiery Cavern stage. In the ROM it always does.
+- In the Hall of Hieroglyphs stage the piping section might have been added at late development. Proof: The map IDs are 4-15-16-5-6-7-8-9-10-11-12-13-14.
+- The Hotel Horror stage may preceeded the Fiery Cavern stage. In the ROM it always does.
 
 # TODOs
-* Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
-* Another passage destination map: 0x08639068 + (i * 12), First byte: destination stage index
-* Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
-* Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
-* Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
-* Starting from 0x083B14F0 there are 32 bytes long records. Connected somehow to the entities.
-* Starting from 0x0878F714 there are around 90 pointers what sdefines what kind of particles are created when something is collected or broken.
-* Starting from 0x0x78F5A4 there are around 20 pointers what might define tile property like things (ability to break and collect things, etc.).
-* Pointers at 0x0863A43C: might be connected to passages/stages somehow
-
-- *xnagytibor*
+- Passage destinations: 0x086391C4 + (i * 4), Values: 0x00-0x1C
+- Another passage destination map: 0x08639068 + (i * 12), First byte: destination stage index
+- Overworld passage connections: 0x086392D0 + (i * 4), values starting from 0x00: Entry, Emerald, Ruby, Topaz, Sapphire, Pyramid, Sound Room,
+- Starting from 0x083F7828 there are (u32, gfx pointer) pairs. Have no idea what they do.
+- Collectible appearances (?) -> 16 x u16 per map, for HoH screen 3 starts at 0x083F8978
+- Starting from 0x083B14F0 there are 32 bytes long records. Connected somehow to the entities.
+- Starting from 0x0878F714 there are around 90 pointers what sdefines what kind of particles are created when something is collected or broken.
+- Starting from 0x0x78F5A4 there are around 20 pointers what might define tile property like things (ability to break and collect things, etc.).
+- Pointers at 0x0863A43C: might be connected to passages/stages somehow
