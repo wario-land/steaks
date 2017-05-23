@@ -36,6 +36,7 @@ The background music of the stages are defined in the warp table.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
+| 0x??   | u32_ptr   | SFX sample
 
 ## SFX samples
 

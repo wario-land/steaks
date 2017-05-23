@@ -1,3 +1,52 @@
+# Stages
+
+## Stage header table
+
+- Starts at: 0x08639068
+- Record count: 29
+- Record length: 12 bytes
+
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| 0x00   | u8        | (?) Some kind of unique index
+| 0x01   | u8        | Area count
+| 0x02   | u8        | (?) Always 0x0A
+| 0x03   | u24       | Hard time limit
+| 0x06   | u24       | Normal time limit
+| 0x09   | u24       | S-Hard time limit
+
+| Index | Offset     | Description
+| ----- | ---------- | -----------
+| 0x00  | 0x08639068 | Hall of Hieroglyphs
+| 0x01  | 0x08639074 | Palm Tree Paradise
+| 0x02  | 0x08639080 | Wildflower Fields
+| 0x03  | 0x0863908C | Mystic Lake
+| 0x04  | 0x08639098 | Monsoon Jungle
+| 0x05  | 0x086390A4 | Cractus
+| 0x06  | 0x086390B0 | Mini-Game Shop
+| 0x07  | 0x086390BC | The Curious Factory
+| 0x08  | 0x086390C8 | The Toxic Landfill
+| 0x09  | 0x086390D4 | Pinball Zone
+| 0x0A  | 0x086390E0 | 40 Below Fridge
+| 0x0B  | 0x086390EC | Cuckoo Condor
+| 0x0C  | 0x086390F8 | (?)
+| 0x0D  | 0x08639104 | Toy Block Tower
+| 0x0E  | 0x08639110 | The Big Board
+| 0x0F  | 0x0863911C | Doodle Woods
+| 0x10  | 0x08639128 | Domino Row
+| 0x11  | 0x08639134 | Aerodent
+| 0x12  | 0x08639140 | (?)
+| 0x13  | 0x0863914C | Crescent Moon Village
+| 0x14  | 0x08639158 | Arabian Night
+| 0x15  | 0x08639164 | Fiery Cavern
+| 0x16  | 0x08639170 | Hotel Horror
+| 0x17  | 0x0863917C | Catbat
+| 0x18  | 0x08639188 | (?)
+| 0x19  | 0x08639194 | Golden Diva
+| 0x1A  | 0x086391A0 | (?)
+| 0x1B  | 0x086391AC | (?)
+| 0x1C  | 0x086391B8 | Golden Passage
+
 ## Maps
 
 ### Overview
