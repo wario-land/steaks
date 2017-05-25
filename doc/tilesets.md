@@ -103,14 +103,14 @@ Each tileset index indexes a record in a global tileset record table starting fr
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u32_ptr   | Pointer to foreground graphics
-| 0x04   | u32       | (?) Some data (migh be some data size)
-| 0x08   | u32_ptr   | Pointer to palette
-| 0x0C   | u32_ptr   | Pointer to background graphics
-| 0x10   | u32       | (?) Some data (migh be some data size)
-| 0x14   | u32_ptr   | (?) Pointer
-| 0x18   | u32_ptr   | (?) Pointer
-| 0x1C   | u32_ptr   | (?) Pointer
-| 0x20   | u32_ptr   | (?) Pointer
+| +0x00  | u32_ptr   | Pointer to foreground graphics
+| +0x04  | u32       | (?) Some data (migh be some data size)
+| +0x08  | u32_ptr   | Pointer to palette
+| +0x0C  | u32_ptr   | Pointer to background graphics
+| +0x10  | u32       | (?) Some data (migh be some data size)
+| +0x14  | u32_ptr   | (?) Pointer
+| +0x18  | u32_ptr   | (?) Pointer
+| +0x1C  | u32_ptr   | (?) Pointer
+| +0x20  | u32_ptr   | (?) Pointer
 
 TODO: List unused records.

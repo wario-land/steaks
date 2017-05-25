@@ -12,19 +12,19 @@ The background music of the stages are defined in the warp table.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u32_ptr   | SFX track header
-| 0x04   | u16       | (?)
-| 0x06   | u16       | (?) Not read by the game
+| +0x00  | u32_ptr   | SFX track header
+| +0x04  | u16       | (?)
+| +0x06  | u16       | (?) Not read by the game
 
 ## SFX track headers
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u16       | Track count
-| 0x02   | u16       | (?)
-| 0x04   | u32_ptr   | SFX soundbank (Track count > 0)
-| 0x08   | u32_ptr   | SFX track #1 data
-| 0x0C   | u32_ptr   | SFX track #2 data
+| +0x00  | u16       | Track count
+| +0x02  | u16       | (?)
+| +0x04  | u32_ptr   | SFX soundbank (Track count > 0)
+| +0x08  | u32_ptr   | SFX track #1 data
+| +0x0C  | u32_ptr   | SFX track #2 data
 | ...    | ...       | ...
 
 ## SFX track data
@@ -36,7 +36,7 @@ The background music of the stages are defined in the warp table.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x??   | u32_ptr   | SFX sample
+| +0x??  | u32_ptr   | SFX sample
 
 ## SFX samples
 

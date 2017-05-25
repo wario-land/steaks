@@ -53,12 +53,12 @@
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u8        | Area header pointer index
-| 0x01   | u8        | Area count
-| 0x02   | u8        | Always 0x0A
-| 0x03   | u24       | Hard mode time limit
-| 0x06   | u24       | Normal mode time limit
-| 0x09   | u24       | S-Hard mode time limit
+| +0x00  | u8        | Area header pointer index
+| +0x01  | u8        | Area count
+| +0x02  | u8        | Always 0x0A
+| +0x03  | u24       | Hard mode time limit
+| +0x06  | u24       | Normal mode time limit
+| +0x09  | u24       | S-Hard mode time limit
 
 | Index | Offset     | Description
 | ----- | ---------- | -----------
@@ -126,7 +126,7 @@
 | 0x17  | 0x0878F2DC | Golden Passage
 | 0x18  | 0x0878F2E0 | Debug Stage
 
-### Area headers
+## Area headers
 
 - Starts at: 0x083F4E88
 - Record count: 242
@@ -134,29 +134,27 @@
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u8        | Tileset index
-| 0x01   | u8        | Foreground layer #1 settings
-| 0x02   | u8        | Foreground layer #2 settings
-| 0x03   | u8        | Foreground layer #3 settings
-| 0x04   | u8        | (?) Background layer settings
-| 0x05   | u24       | Padding
-| 0x08   | u32_ptr   | Pointer to the fg #1 layer data
-| 0x0C   | u32_ptr   | Pointer to the fg #2 layer data
-| 0x10   | u32_ptr   | Pointer to the fg #3 layer data
-| 0x14   | u32_ptr   | Pointer to the bg layer data
-| 0x18   | u8        | (?) Layer priority
-| 0x19   | u8        | (?) Layer priority
-| 0x1A   | u8        | (?) Layer priority
-| 0x1B   | u8        | (?) Layer priority (Always 0x00)
-| 0x1C   | u32_ptr   | Hard mode entity list pointer
-| 0x20   | u32_ptr   | Normal mode entity list pointer
-| 0x24   | u32_ptr   | S-Hard mode entity list pointer
-| 0x28   | u8        | (?)
-| 0x29   | u8        | (?)
-| 0x2A   | u8        | (?)
-| 0x2B   | u8        | (?)
-
-*Question marks denote unsure information.*
+| +0x00  | u8        | Tileset index
+| +0x01  | u8        | Layer 0 properties
+| +0x02  | u8        | Layer 1 properties
+| +0x03  | u8        | Layer 2 properties
+| +0x04  | u8        | Layer 3 properties
+| +0x05  | u24       | Padding
+| +0x08  | u32_ptr   | Layer 0 data
+| +0x0C  | u32_ptr   | Layer 1 data
+| +0x10  | u32_ptr   | Layer 2 data
+| +0x14  | u32_ptr   | Layer 3 data
+| +0x18  | u8        | (?) Layer priority
+| +0x19  | u8        | (?) Layer priority
+| +0x1A  | u8        | (?) Layer priority
+| +0x1B  | u8        | (?) Layer priority (Always 0x00) / (?) Padding
+| +0x1C  | u32_ptr   | Hard mode entities
+| +0x20  | u32_ptr   | Normal mode entities
+| +0x24  | u32_ptr   | S-Hard mode entities
+| +0x28  | u8        | (?)
+| +0x29  | u8        | (?)
+| +0x2A  | u8        | (?)
+| +0x2B  | u8        | (?)
 
 ### Layer settings
 
@@ -216,14 +214,14 @@ Note: from 0x0878E780 to 0x0878F970 there are several of pointers pointing to th
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
-| 0x01   | u8        | (?) Looks like a sequence/map number
-| 0x02   | u8        | (?) Might be the X-coordinate
-| 0x03   | u8        | (?) Might be the X-coordinate
-| 0x04   | u8        | (?) Might be the Y-coordinate
-| 0x05   | u8        | (?) Might be the Y-coordinate
-| 0x06   | u8        | Destination (0x00 - Back to the overworld)
-| 0x07   | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
-| 0x08   | u8        | (?) Similar to the previous value
-| 0x09   | u8        | (?) Connected somehow to entities
-| 0x0A   | u16       | Music index, 0x0000 means no change on entering
+| +0x00  | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
+| +0x01  | u8        | (?) Looks like a sequence/map number
+| +0x02  | u8        | (?) Might be the X-coordinate
+| +0x03  | u8        | (?) Might be the X-coordinate
+| +0x04  | u8        | (?) Might be the Y-coordinate
+| +0x05  | u8        | (?) Might be the Y-coordinate
+| +0x06  | u8        | Destination (0x00 - Back to the overworld)
+| +0x07  | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
+| +0x08  | u8        | (?) Similar to the previous value
+| +0x09  | u8        | (?) Connected somehow to entities
+| +0x0A  | u16       | Music index, 0x0000 means no change on entering

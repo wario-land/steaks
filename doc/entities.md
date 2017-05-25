@@ -6,9 +6,9 @@ The entities for each area and difficulty level stored in separate lists. A reco
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| 0x00   | u8        | Y-coordinate (top -> bottom)
-| 0x01   | u8        | X-coordinate (left -> right)
-| 0x02   | u8        | Entity index
+| +0x00  | u8        | Y-coordinate (top -> bottom)
+| +0x01  | u8        | X-coordinate (left -> right)
+| +0x02  | u8        | Entity index
 
 ## Entity indices
 
