@@ -67,3 +67,4 @@ The following code turns **off** the debug mode:
 - Starting from 0x0878F714 there are around 90 pointers what sdefines what kind of particles are created when something is collected or broken.
 - Starting from 0x0x78F5A4 there are around 20 pointers what might define tile property like things (ability to break and collect things, etc.).
 - Pointers at 0x0863A43C: might be connected to passages/stages somehow
+- from 0x0878E780 to 0x0878F970 there are several of pointers to warps

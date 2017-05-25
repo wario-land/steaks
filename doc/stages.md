@@ -147,7 +147,7 @@
 | +0x18  | u8        | (?) Layer priority
 | +0x19  | u8        | (?) Layer priority
 | +0x1A  | u8        | (?) Layer priority
-| +0x1B  | u8        | (?) Layer priority (Always 0x00) / (?) Padding
+| +0x1B  | u8        | (?) Layer priority / (?) Padding
 | +0x1C  | u32_ptr   | Hard mode entities
 | +0x20  | u32_ptr   | Normal mode entities
 | +0x24  | u32_ptr   | S-Hard mode entities
@@ -156,6 +156,63 @@
 | +0x2A  | u8        | (?)
 | +0x2B  | u8        | (?)
 
+## Warp list pointers
+
+- Starts at: 0x0878F21C
+- Record count: 25
+- Record type: u32_ptr
+
+| Index | Offset     | Description
+| ----- | ---------- | -----
+| 0x00  | 0x0878F21C | Hall of Hieroglyphs
+| 0x01  | 0x0878F220 | Palm Tree Paradise
+| 0x02  | 0x0878F224 | Wildflower Fields
+| 0x03  | 0x0878F228 | Mystic Lake
+| 0x04  | 0x0878F22C | Monsoon Jungle
+| 0x05  | 0x0878F230 | The Curious Factory
+| 0x06  | 0x0878F234 | The Toxic Landfill
+| 0x07  | 0x0878F238 | Pinball Zone
+| 0x08  | 0x0878F23C | 40 Below Fridge
+| 0x09  | 0x0878F240 | Toy Block Tower
+| 0x0A  | 0x0878F244 | The Big Board
+| 0x0B  | 0x0878F248 | Doodle Woods
+| 0x0C  | 0x0878F24C | Domino Row
+| 0x0D  | 0x0878F250 | Crescent Moon Village
+| 0x0E  | 0x0878F254 | Arabian Night
+| 0x0F  | 0x0878F258 | Hotel Horror
+| 0x10  | 0x0878F25C | Fiery Cavern
+| 0x11  | 0x0878F260 | (?) Cractus
+| 0x12  | 0x0878F264 | (?) Cuckoo Condor
+| 0x13  | 0x0878F268 | (?) Aerodent
+| 0x14  | 0x0878F26C | (?) Catbat
+| 0x15  | 0x0878F270 | (?) Golden Diva
+| 0x16  | 0x0878F274 | (?) Spoiled Rotten
+| 0x17  | 0x0878F278 | (?) Golden Passage
+| 0x18  | 0x0878F27C | (?) Debug stage
+
+## Warps
+
+- Starts at: 0x083F2F88
+- Record count: 660
+- Record length: 12 bytes
+
+Records filled with zeroes separates stages.
+
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| +0x00  | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
+| +0x01  | u8        | (?) Looks like a sequence/area number
+| +0x02  | u8        | (?) Might be the X-coordinate
+| +0x03  | u8        | (?) Might be the X-coordinate
+| +0x04  | u8        | (?) Might be the Y-coordinate
+| +0x05  | u8        | (?) Might be the Y-coordinate
+| +0x06  | u8        | Destination (0x00 - Back to the stage select screen)
+| +0x07  | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
+| +0x08  | u8        | (?) Similar to the previous value
+| +0x09  | u8        | (?) Connected somehow to entities
+| +0x0A  | u16       | Music index (0x0000 - No change)
+
+<!--
 ### Layer settings
 
 TODO:
@@ -174,54 +231,4 @@ TODO: w:u8, h:u8, rle_stream
 ### Background layer data
 
 TODO: size:u8, rle_stream (1024/2048 bytes after decompression)
-
-### Pointers for map entrance lists
-
-They start from 0x0878F21C and point to map entrance lists.
-
-| Offset | Data type | Stage
-| ------ | --------- | -----
-| 0x00   | u32_ptr   | Hall of Hieroglyphs
-| 0x04   | u32_ptr   | Palm Tree Paradise
-| 0x08   | u32_ptr   | Wildflower Fields
-| 0x0C   | u32_ptr   | Mystic Lake
-| 0x10   | u32_ptr   | Monsoon Jungle
-| 0x14   | u32_ptr   | The Curious Factory
-| 0x18   | u32_ptr   | The Toxic Landfill
-| 0x1C   | u32_ptr   | (?) Pinball Zone
-| 0x20   | u32_ptr   | 40 Below Fridge
-| 0x24   | u32_ptr   | Toy Block Tower
-| 0x28   | u32_ptr   | The Big Board
-| 0x2C   | u32_ptr   | Doodle Woods
-| 0x30   | u32_ptr   | Domino Row
-| 0x34   | u32_ptr   | Crescent Moon Village
-| 0x38   | u32_ptr   | Arabian Night
-| 0x3C   | u32_ptr   | Hotel Horror
-| 0x40   | u32_ptr   | Fiery Cavern
-| 0x44   | u32_ptr   | (?) Emerald Passage Boss Corridor
-| 0x48   | u32_ptr   | (?) Ruby Passage Boss Corridor
-| 0x4C   | u32_ptr   | (?) Topaz Passage Boss Corridor
-| 0x50   | u32_ptr   | (?) Sapphire Passage Boss Corridor
-| 0x54   | u32_ptr   | (?) Golden Passage Boss Corridor
-| 0x58   | u32_ptr   | (?) Entry Passage Boss Corridor
-| 0x5C   | u32_ptr   | (?) Golden Passage
-
-### Map entrance list
-
-The data from 0x083F2F88 in ROM, each record is 12 bytes long. Records filled with 0x00 separates stages. 660 records.
-
-Note: from 0x0878E780 to 0x0878F970 there are several of pointers pointing to these records.
-
-| Offset | Data type | Description
-| ------ | --------- | -----------
-| +0x00  | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
-| +0x01  | u8        | (?) Looks like a sequence/map number
-| +0x02  | u8        | (?) Might be the X-coordinate
-| +0x03  | u8        | (?) Might be the X-coordinate
-| +0x04  | u8        | (?) Might be the Y-coordinate
-| +0x05  | u8        | (?) Might be the Y-coordinate
-| +0x06  | u8        | Destination (0x00 - Back to the overworld)
-| +0x07  | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
-| +0x08  | u8        | (?) Similar to the previous value
-| +0x09  | u8        | (?) Connected somehow to entities
-| +0x0A  | u16       | Music index, 0x0000 means no change on entering
+-->
