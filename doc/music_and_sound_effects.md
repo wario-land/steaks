@@ -337,11 +337,11 @@ The background music of the stages are defined in the warp table.
 | 0x011D | 0x08098910 | (?)
 | 0x011E | 0x08098918 | (?)
 | 0x011F | 0x08098920 | (?)
-| 0x0120 | 0x08098928 | (?)
-| 0x0121 | 0x08098930 | (?)
+| 0x0120 | 0x08098928 | SFX: Sound Room CD started
+| 0x0121 | 0x08098930 | SFX: Sound Room CD stopped
 | 0x0122 | 0x08098938 | (?)
 | 0x0123 | 0x08098940 | (?)
-| 0x0124 | 0x08098948 | (?)
+| 0x0124 | 0x08098948 | SFX: Sound Room selection change
 | 0x0125 | 0x08098950 | (?)
 | 0x0126 | 0x08098958 | (?)
 | 0x0127 | 0x08098960 | (?)

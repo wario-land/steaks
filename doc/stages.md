@@ -200,13 +200,13 @@ Records filled with zeroes separates stages.
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| +0x00  | u8        | (?) Possible values: 0x01, 0x02, 0x03, (0x04, 0x05)
-| +0x01  | u8        | (?) Looks like a sequence/area number
-| +0x02  | u8        | (?) Might be the X-coordinate
-| +0x03  | u8        | (?) Might be the X-coordinate
-| +0x04  | u8        | (?) Might be the Y-coordinate
-| +0x05  | u8        | (?) Might be the Y-coordinate
-| +0x06  | u8        | Destination (0x00 - Back to the stage select screen)
+| +0x00  | u8        | (?) Warp type: 0x00 - End of list, 0x01 - Vortex, 0x02 - Side of screen, 0x03 - Pipe, 0x04 - (?), 0x05 - (?)
+| +0x01  | u8        | Area index
+| +0x02  | u8        | (?) X-coordinate when it's source/target
+| +0x03  | u8        | (?) X-coordinate when it's target/source
+| +0x04  | u8        | (?) Y-coordinate when it's source/target
+| +0x05  | u8        | (?) Y-coordinate when it's target/source
+| +0x06  | u8        | Target warp index (0x00 - Stage select screen)
 | +0x07  | u8        | (?) Possible values: 0x00, 0x08, 0x18, 0x20, 0x24, 0x40, 0xE0, ...
 | +0x08  | u8        | (?) Similar to the previous value
 | +0x09  | u8        | (?) Connected somehow to entities
