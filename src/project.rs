@@ -44,8 +44,7 @@ pub struct Stage {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Tileset {
-}
+pub struct Tileset {}
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Area {
@@ -82,4 +81,3 @@ pub struct Entity {
     pub y: u8,
     pub kind: u8,
 }
-

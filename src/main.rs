@@ -1,24 +1,25 @@
-#[macro_use] extern crate enum_primitive;
-#[macro_use] extern crate itertools;
-#[macro_use] extern crate serde_derive;
+#[macro_use]
+extern crate enum_primitive;
+#[macro_use]
+extern crate itertools;
+#[macro_use]
+extern crate serde_derive;
 extern crate num;
 extern crate serde;
 extern crate uuid;
+extern crate byteorder;
 
 #[macro_use]
 mod rom_map;
 mod project;
 mod import;
 
-use std::io::Read;
-use std::fs::File;
+
 use import::import;
+use rom_map::Rom;
 
 fn main() {
-    let mut rom_data: Vec<u8> = Vec::new();
-    let mut rom_file = File::open("/home/tibor/git/gba/gba-tools/rom/wario_land_4.gba").unwrap();
-    rom_file.read_to_end(&mut rom_data).unwrap();
-
-    let project = import(&rom_data).unwrap();
+    let rom = Rom::new("/home/tibor/git/gba/gba-tools/rom/wario_land_4.gba").unwrap();
+    let project = import(&rom).unwrap();
     println!("{:#?}", project);
 }
