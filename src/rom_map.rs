@@ -36,7 +36,7 @@ impl Rom {
         Ok(LittleEndian::read_u32(&self.data[rom!(address)?..]))
     }
 
-    pub fn read_struct(&self, rom_struct: &RomStruct, index: u32) -> Result<&[u8]> {
+    pub fn read_struct(&self, rom_struct: &RomStruct, index: usize) -> Result<&[u8]> {
         let address = rom!(rom_struct.nth_address(index))?;
         let length = rom_struct.struct_length as usize;
         Ok(&self.data[address..address + length])
@@ -49,12 +49,12 @@ impl Rom {
 
 #[derive(Debug)]
 pub struct RomStruct {
-    base_address: u32,
-    struct_length: u32,
+    pub base_address: u32,
+    pub struct_length: u32,
 }
 
 impl RomStruct {
-    pub fn nth_address(&self, index: u32) -> u32 {
+    pub fn nth_address(&self, index: usize) -> u32 {
         self.base_address + self.struct_length * (index as u32)
     }
 }
@@ -77,4 +77,9 @@ pub static SFX_HEADERS: RomStruct = RomStruct {
 pub static TILESET_HEADERS: RomStruct = RomStruct {
     base_address: 0x083F2298,
     struct_length: 36,
+};
+
+pub static AREA_HEADER_POINTERS: RomStruct = RomStruct {
+    base_address: 0x0878F280,
+    struct_length: 4,
 };
