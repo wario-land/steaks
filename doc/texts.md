@@ -58,7 +58,7 @@
 | 0x0863A3AC | 0x0F   | English stage names
 | 0x0863D8A0 | 0x10   | Japanese CD titles
 | 0x0863D8E0 | 0x10   | English CD titles
-| 0x0863D921 | 0x0A   | Japanese karaoke lyrics
+| 0x0863D920 | 0x0A   | Japanese karaoke lyrics
 | 0x0863D948 | 0x0D   | English karaoke lyrics
 
 ## Passage names
