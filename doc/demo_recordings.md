@@ -1,11 +1,6 @@
 # Demo recordings
 
-## Pointer tables
-
-| Offset     | Count  | Description
-| ---------- | ------ | -----------
-| 0x0878F5F4 | 0x10   | Button states
-| 0x0878F634 | 0x10   | Timings
+The game stores the index of the currently played demo recording at the location 0x03000020.
 
 | Index | Demo level
 | ----- | ----------
@@ -25,6 +20,15 @@
 | 0x0D  | Arabian Night
 | 0x0E  | Fiery Cavern
 | 0x0F  | Hotel Horror
+
+## Pointer tables
+
+These tables are indexed by the index above.
+
+| Offset     | Count  | Description
+| ---------- | ------ | -----------
+| 0x0878F5F4 | 0x10   | Button states
+| 0x0878F634 | 0x10   | Timings
 
 ## Data format and playback
 
