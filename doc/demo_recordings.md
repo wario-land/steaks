@@ -1,6 +1,18 @@
 # Demo recordings
 
-The game stores the index of the currently played demo recording at the location 0x03000020.
+## Demo orderlist
+
+* Starts at: 0x0840092C
+* Record count: 16
+* Record type: u8
+
+This list determines in which order the demos recordings are played. The game stores the index of the currently played orderlist index at the location 0x03000020.
+
+## Demo recording headers
+
+* Starts at: 0x0840086C
+* Record count: 16
+* Record length: 12 bytes
 
 | Index | Demo level
 | ----- | ----------
@@ -21,9 +33,23 @@ The game stores the index of the currently played demo recording at the location
 | 0x0E  | Fiery Cavern
 | 0x0F  | Hotel Horror
 
+| Offset | Data type | Description
+| ------ | --------- | -----------
+| +0x00  | u8        | ?
+| +0x01  | u8        | ?
+| +0x02  | u8        | ?
+| +0x03  | u8        | Padding
+| +0x04  | u8        | ?
+| +0x05  | u8        | ?
+| +0x06  | u8        | ?
+| +0x07  | u8        | ?
+| +0x08  | u8        | ?
+| +0x09  | u8        | ?
+| +0x0A  | u16       | Padding
+
 ## Pointer tables
 
-These tables are indexed by the index above.
+These tables are indexed by the demo header index.
 
 | Offset     | Count  | Description
 | ---------- | ------ | -----------
