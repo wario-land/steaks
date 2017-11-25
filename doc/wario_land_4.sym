@@ -61,6 +61,12 @@
 03004783 iram_soundroom_karaoke_pitch
 03004784 iram_soundroom_karaoke_speed
 
+; Demos
+0800086c rom_demo_headers
+0840092c rom_demo_orderlist
+0878f5f4 rom_ptrs_demo_buttons
+0878f634 rom_ptrs_demo_timings
+
 ; Pointer tables
 0863956c rom_ptrs_passage_names_jp
 08639588 rom_ptrs_passage_names_en
@@ -71,8 +77,6 @@
 0863d921 rom_ptrs_karaoke_lyrics_jp
 0863d948 rom_ptrs_karaoke_lyrics_en
 0878f540 rom_ptrs_unknown
-0878f5f4 rom_ptrs_demo_buttons
-0878f634 rom_ptrs_demo_timings
 08639068 rom_ptrs_stage_headers
 
 ; Indices
