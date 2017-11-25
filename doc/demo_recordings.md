@@ -35,16 +35,13 @@ This list determines in which order the demos recordings are played. The game st
 
 | Offset | Data type | Description
 | ------ | --------- | -----------
-| +0x00  | u8        | ?
-| +0x01  | u8        | ?
-| +0x02  | u8        | ?
+| +0x00  | u8        | Passage index
+| +0x01  | u8        | Stage index
+| +0x02  | u8        | Area index
 | +0x03  | u8        | Padding
-| +0x04  | u8        | ?
-| +0x05  | u8        | ?
-| +0x06  | u8        | ?
-| +0x07  | u8        | ?
-| +0x08  | u8        | ?
-| +0x09  | u8        | ?
+| +0x04  | u16       | Starting X-position in the area
+| +0x06  | u16       | Starting Y-position in the area
+| +0x08  | u16       | Background music index
 | +0x0A  | u16       | Padding
 
 ## Pointer tables
@@ -72,6 +69,3 @@ The button states and timings are both defined as u16 arrays. The button state d
 | 0x0080 | Down
 | 0x0100 | (?)
 | ...    | ...
-
-## TODO
-- Where does the game define the stages, areas and starting coordinates of the demos?
