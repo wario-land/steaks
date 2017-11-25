@@ -6,6 +6,7 @@
 03000004 iram_current_stage_index
 03000016 iram_language
 03000019 iram_savegame_slot
+03000020 iram_current_demo_index
 03000023 iram_current_tileset
 03000024 iram_current_room_id
 03000060 iram_current_room_width
