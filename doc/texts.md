@@ -60,6 +60,10 @@
 | 0x0863D8E0 | 0x10   | English CD titles
 | 0x0863D920 | 0x0A   | Japanese karaoke lyrics
 | 0x0863D948 | 0x0D   | English karaoke lyrics
+| 0x086E32C4 | 0x0C   | Japanese mini-game texts
+| 0x086E32F4 | 0x0C   | English mini-game texts
+| 0x08730114 | 0x0F   | Japanese Item Shop texts
+| 0x08730150 | 0x0F   | English Item Shop texts
 
 ## Passage names
 
