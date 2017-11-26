@@ -4,6 +4,7 @@
 03000002 iram_current_passage
 03000003 iram_current_stage
 03000004 iram_current_stage_index
+03000006 iram_frame_counter
 03000016 iram_language
 03000019 iram_savegame_slot
 03000020 iram_current_demo_orderlist_index
