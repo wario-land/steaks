@@ -78,6 +78,10 @@
 0863d948 rom_ptrs_karaoke_lyrics_en
 0878f540 rom_ptrs_unknown
 08639068 rom_ptrs_stage_headers
+086e32c4 rom_ptrs_minigame_txt_jp
+086e32f4 rom_ptrs_minigame_txt_en
+08730114 rom_ptrs_itemshop_txt_jp
+08730150 rom_ptrs_itemshop_txt_en
 
 ; Indices
 086391c4 rom_idxs_stage_headers
