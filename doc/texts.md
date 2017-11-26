@@ -246,3 +246,38 @@ The strings are aligned to the left.
 | 0x15  | 0x086F4A3E | EN       | You got a new high score! 
 | 0x16  | 0x086F4A58 | JP       | イッカイクライ アソンデ イキマショウヨ.     
 | 0x17  | 0x086F4A72 | EN       | Don't you want to play? 
+
+## Item Shop
+
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x0873D458 | JP       | なにもかわずに でていくのネ.そうなのネ?     
+| 0x01  | 0x0873D472 | EN       | Leaving without buying?   
+| 0x02  | 0x0873D48C | JP       | りんごのカタチの ばくだんヨ.たべちゃダメ.    
+| 0x03  | 0x0873D4A6 | EN       | That's an Apple Bomb.     
+| 0x04  | 0x0873D4C0 | JP       | ドカーンな たいほうなのヨ.でも ちいさいのヨ.  
+| 0x05  | 0x0873D4DA | EN       | That's a Blast Cannon.    
+| 0x06  | 0x0873D4F4 | JP       | しろマンヨ.しろいから しろマンなのヨ.      
+| 0x07  | 0x0873D50E | EN       | That's Vizorman.          
+| 0x08  | 0x0873D528 | JP       | ラッパなのヨ.ヨワそうだけど ヨワくないヨ.    
+| 0x09  | 0x0873D542 | EN       | That's a Bugle.           
+| 0x0A  | 0x0873D55C | JP       | クロいイヌヨ.メがコワいなんて いわないのヨ.   
+| 0x0B  | 0x0873D576 | EN       | That's a Black Dog.       
+| 0x0C  | 0x0873D590 | JP       | おっきい クチびるヨ.テキに ブッチュしちゃうのヨ.
+| 0x0D  | 0x0873D5AA | EN       | Those are the Large Lips. 
+| 0x0E  | 0x0873D5C4 | JP       | おやじの げんこつヨ.じつは えどっコなのヨ.   
+| 0x0F  | 0x0873D5DE | EN       | That's a Big Fist.        
+| 0x10  | 0x0873D5F8 | JP       | クロいドラゴンヨ.イヌに にてるけど ちがうヨ.  
+| 0x11  | 0x0873D612 | EN       | That's a Black Dragon.    
+| 0x12  | 0x0873D62C | JP       | ステキな えがおを アナタに プレゼント!     
+| 0x13  | 0x0873D646 | EN       | Here's a smile for you!   
+| 0x14  | 0x0873D660 | JP       | アイテムショップに ようこそなのヨ.        
+| 0x15  | 0x0873D67A | EN       | Welcome to the Item Shop. 
+| 0x16  | 0x0873D694 | JP       | メダル たりないのヨ.うらないヨ.         
+| 0x17  | 0x0873D6AE | EN       | You need more medals.     
+| 0x18  | 0x0873D6C8 | JP       | おかいあげ ありがとなのヨ.            
+| 0x19  | 0x0873D6E2 | EN       | Thank you!                
+| 0x1A  | 0x0873D6FC | JP       | ミニゲームで メダル てにいれてくるのヨ.     
+| 0x1B  | 0x0873D716 | EN       | Go play some mini-games.  
+| 0x1C  | 0x0873D730 | JP       | ウふっ!                      
+| 0x1D  | 0x0873D74A | EN       | Hmph! 
