@@ -323,7 +323,10 @@
 0877d150 rom_pal_credits_splash_0e
 0877d170 rom_gfx_credits_splash_0e
 
-; Procedures in ROM
+; ROM procedures
+0806bdf8 rom_proc_rle_decompress
+
+; Unknown ROM procedures
 080001cc rom_proc_080001cc
 080006b0 rom_proc_080006b0
 080007bc rom_proc_080007bc
@@ -3509,7 +3512,6 @@
 0806bad0 rom_proc_0806bad0
 0806bb4c rom_proc_0806bb4c
 0806bd64 rom_proc_0806bd64
-0806bdf8 rom_proc_rle_decompress
 0806bf04 rom_proc_0806bf04
 0806bf3c rom_proc_0806bf3c
 0806bf88 rom_proc_0806bf88
