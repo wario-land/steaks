@@ -215,3 +215,34 @@ The titles are centered, the lyrics are aligned to the left.
 | 0x16  | 0x086D3344 | EN       | ISHINI KOEWO KIZAMO
 | 0x17  | 0x086D335E | EN       | TSUKIWO SUPUNI UKABETARA
 | 0x18  | 0x086D3378 | EN       | HYOUGARANO KUMOGA WARAU
+
+## Mini-games
+
+The strings are aligned to the left.
+
+| Index | Offset     | Language | Value
+| ----- | ---------- | -------- | -----
+| 0x00  | 0x086F481C | JP       | ミニゲームデ メダルヲ ゲット シマショウ!    
+| 0x01  | 0x086F4836 | EN       | Win medals in mini-games. 
+| 0x02  | 0x086F4850 | JP       | スポーツバンノウナ アナタハ 『ワリオ ホームラン』
+| 0x03  | 0x086F486A | EN       | Wario's Homerun Derby     
+| 0x04  | 0x086F4884 | JP       | オンガクズキナ アナタハ 『ワリオ ホッパー』   
+| 0x05  | 0x086F489E | EN       | The Wario Hop             
+| 0x06  | 0x086F48B8 | JP       | キオクリョクノヨイ アナタハ 『ワリオ ルーレット』
+| 0x07  | 0x086F48D2 | EN       | Wario's Roulette          
+| 0x08  | 0x086F48EC | JP       | コインガ タリナイノデ ゲームハ デキマセン.   
+| 0x09  | 0x086F4906 | EN       | You need more coins.      
+| 0x0A  | 0x086F4920 | JP       | タダイマ セイサクチュウ.             
+| 0x0B  | 0x086F493A | EN       | Under construction.       
+| 0x0C  | 0x086F4954 | JP       | モウチョット ミニゲーム シマセンカ?       
+| 0x0D  | 0x086F496E | EN       | Want to play some more?   
+| 0x0E  | 0x086F4988 | JP       | コインヲカセイデ マタ キテクダサイネ.      
+| 0x0F  | 0x086F49A2 | EN       | Come back after saving up.
+| 0x10  | 0x086F49BC | JP       | イッテラッシャイ!                 
+| 0x11  | 0x086F49D6 | EN       | Come again.               
+| 0x12  | 0x086F49F0 | JP       | オカエリ ナサイマシ.               
+| 0x13  | 0x086F4A0A | EN       | Welcome back!             
+| 0x14  | 0x086F4A24 | JP       | ハイスコア コウシン オメデトウゴザイマス.    
+| 0x15  | 0x086F4A3E | EN       | You got a new high score! 
+| 0x16  | 0x086F4A58 | JP       | イッカイクライ アソンデ イキマショウヨ.     
+| 0x17  | 0x086F4A72 | EN       | Don't you want to play? 
