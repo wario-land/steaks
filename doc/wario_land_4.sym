@@ -62,7 +62,7 @@
 03004784 iram_soundroom_karaoke_speed
 
 ; Demos
-0800086c rom_demo_headers
+0840086c rom_demo_headers
 0840092c rom_demo_orderlist
 0878f5f4 rom_ptrs_demo_buttons
 0878f634 rom_ptrs_demo_timings
