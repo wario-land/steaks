@@ -83,6 +83,8 @@
 086e32f4 rom_ptrs_minigame_txt_en
 08730114 rom_ptrs_itemshop_txt_jp
 08730150 rom_ptrs_itemshop_txt_en
+08747140 rom_ptrs_credits_gfx
+08747178 rom_ptrs_credits_pal
 
 ; Indices
 086391c4 rom_idxs_stage_headers
