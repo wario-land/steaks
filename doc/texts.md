@@ -1,6 +1,8 @@
 # Text
 
-## In-game text encoding
+## In-game
+
+### Text encoding
 
 |        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
 | ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -21,34 +23,7 @@
 | **Ex** | ヴ | '  | ,  | .  | ー  | ~  | …  | !  | ?  | (  | )  | 「 | 」 | 『 | 』 | [  |
 | **Fx** | ]  | ℃ | -  |    |    |    |    |    |    |    |    |    |    |    |    |    |
 
-## Credits text encoding
-
-### One-tile high
-
-|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
-| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| **4x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
-| **5x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  | .  | ,  |    |    |    |    |
-
-### Two-tile high, upper half
-
-|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
-| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| **6x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
-| **7x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
-| **Ax** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
-| **Bx** | q  | r  | s  | t  | u  | v  | w  | x  | y  |    |    |    |    |    |    |    |
-
-### Two-tile high, lower half
-
-|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
-| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| **8x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
-| **9x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
-| **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
-| **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
-
-## Pointer tables
+### Pointer tables
 
 | Offset     | Count  | Description
 | ---------- | ------ | -----------
@@ -65,7 +40,7 @@
 | 0x08730114 | 0x0F   | Japanese Item Shop texts
 | 0x08730150 | 0x0F   | English Item Shop texts
 
-## Passage names
+### Passage names
 
 The strings are 26 character long, left and right padded with 0xFF to be centered.
 
@@ -86,7 +61,7 @@ The strings are 26 character long, left and right padded with 0xFF to be centere
 | 0x0C  | 0x0864C890 | JP       | サウンドルーム
 | 0x0D  | 0x0864C8AA | EN       | Sound Room
 
-## Stage names
+### Stage names
 
 | Index | Offset     | Language | Value
 | ----- | ---------- | -------- | -----
@@ -151,7 +126,7 @@ The strings are 26 character long, left and right padded with 0xFF to be centere
 | 0x3A  | 0x0865D4A8 | JP       | ミニゲームやさん
 | 0x3B  | 0x0865D4C2 | EN       | Mini-Game Shop
 
-## CD titles
+### CD titles
 
 | Index | Offset     | Language | Value
 | ----- | ---------- | -------- | -----
@@ -188,7 +163,7 @@ The strings are 26 character long, left and right padded with 0xFF to be centere
 | 0x1E  | 0x086CB794 | JP       | エーテルおじさん と プラナリア
 | 0x1F  | 0x086CB7AE | EN       | Mr. Ether & Planaria
 
-## Karaoke
+### Karaoke
 
 The titles are centered, the lyrics are aligned to the left.
 
@@ -220,7 +195,7 @@ The titles are centered, the lyrics are aligned to the left.
 | 0x17  | 0x086D335E | EN       | TSUKIWO SUPUNI UKABETARA
 | 0x18  | 0x086D3378 | EN       | HYOUGARANO KUMOGA WARAU
 
-## Mini-games
+### Mini-games
 
 The strings are aligned to the left.
 
@@ -251,7 +226,7 @@ The strings are aligned to the left.
 | 0x16  | 0x086F4A58 | JP       | イッカイクライ アソンデ イキマショウヨ.     
 | 0x17  | 0x086F4A72 | EN       | Don't you want to play? 
 
-## Item Shop
+### Item Shop
 
 | Index | Offset     | Language | Value
 | ----- | ---------- | -------- | -----
@@ -285,3 +260,65 @@ The strings are aligned to the left.
 | 0x1B  | 0x0873D716 | EN       | Go play some mini-games.  
 | 0x1C  | 0x0873D730 | JP       | ウふっ!                      
 | 0x1D  | 0x0873D74A | EN       | Hmph! 
+
+## Credits
+
+### Text encoding
+
+#### One-tile high
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **4x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **5x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  | .  | ,  |    |    |    |    |
+
+#### Two-tile high, upper half
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **6x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **7x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
+| **Ax** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
+| **Bx** | q  | r  | s  | t  | u  | v  | w  | x  | y  |    |    |    |    |    |    |    |
+
+#### Two-tile high, lower half
+
+|        | x0 | x1 | x2 | x3 | x4 | x5 | x6 | x7 | x8 | x9 | xA | xB | xC | xD | xE | xF |
+| ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| **8x** | A  | B  | C  | D  | E  | F  | G  | H  | I  | J  | K  | L  | M  | N  | O  | P  |
+| **9x** | Q  | R  | S  | T  | U  | V  | W  | X  | Y  | Z  |    |    |    |    |    |    |
+| **Cx** | a  | b  | c  | d  | e  | f  | g  | h  | i  | j  | k  | l  | m  | n  | o  | p  |
+| **Dx** | q  | r  | s  | t  | u  | v  | w  | x  | y  | .  |    |    |    |    |    |    |
+
+### Textmaps
+
+| Offset     | Count  | Description
+| ---------- | ------ | -----------
+| 0x08747108 | 0x0E   | Textmap pointers
+
+| Index | Offset     | Value
+| ----- | ---------- | -----
+| 0x00  | 0x08789FCC | Executive Producer
+| 0x01  | 0x0878A4CC | Producer
+| 0x02  | 0x0878A9CC | Director, Supervisor
+| 0x03  | 0x0878AECC | Programmers
+| 0x04  | 0x0878B3CC | Designers
+| 0x05  | 0x0878B8CC | Designers
+| 0x06  | 0x0878BDCC | Music
+| 0x07  | 0x0878C2CC | Voice
+| 0x08  | 0x0878C7CC | Artwork
+| 0x09  | 0x0878CCCC | Special Thanks 
+| 0x0A  | 0x0878D1CC | Super Mario Club 
+| 0x0B  | 0x0878D6CC | Super Mario Club 
+| 0x0C  | 0x0878DBCC | Super Mario Club 
+| 0x0D  | 0x0878E0CC | Copyright Notice
+
+* Textmap size: 1280 bytes
+* Textmap width: 32 tiles
+* Textmap height: 20 tiles
+* Tile size: 2 bytes
+
+### Notes
+
+* The Copyright notice textmap seems to be unused. 
+* There's a weird tile in the Music textmap.
