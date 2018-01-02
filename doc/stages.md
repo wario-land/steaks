@@ -212,6 +212,12 @@ Records filled with zeroes separates stages.
 | +0x09  | u8        | (?) Connected somehow to entities
 | +0x0A  | u16       | Music index (0x0000 - No change)
 
+## TODO
+
+* Area headers at 0x02000000
+* Decompressed area data at 0x02000040
+* Area destruction list at 0x0203A000
+
 <!--
 ### Layer settings
 
