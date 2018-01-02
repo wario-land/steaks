@@ -1,47 +1,106 @@
 ; no$gba symbol information table for Wario Land 4
 
 ; General
+
 03000002 iram_current_passage
+03000002 .byt:0001
+
 03000003 iram_current_stage
+03000003 .byt:0001
+
 03000004 iram_current_stage_index
+03000004 .byt:0001
+
 03000006 iram_frame_counter
+03000006 .wrd:0002
+
 03000016 iram_language
+03000016 .byt:0001
+
 03000019 iram_savegame_slot
+03000019 .byt:0001
+
 03000020 iram_current_demo_orderlist_index
+03000020 .byt:0001
+
 03000023 iram_current_tileset
+03000023 .byt:0001
+
 03000024 iram_current_room_id
+03000024 .byt:0001
+
 03000060 iram_current_room_width
+03000060 .wrd:0002
+
 03000062 iram_current_room_height
+03000062 .wrd:0002
+
 03000b86 iram_big_board_counter
+03000b86 .byt:0001
+
 03000bf0 iram_countdown_seconds_digit_2
+03000bf0 .byt:0001
+
 03000bf1 iram_countdown_seconds_digit_1
+03000bf1 .byt:0001
+
 03000bf2 iram_countdown_minutes
-03000bfc iram_score_digit_5
-03000bfd iram_score_digit_4
-03000bfe iram_score_digit_3
-03000bff iram_score_digit_2
-03000c00 iram_score_digit_1
+03000bf2 .byt:0001
+
+03000bfc iram_score_digits
+03000bfc .byt:0005
+
 03000c0d iram_vortex_state
+03000c0d .byt:0001
+
 03001898 iram_wario_transformation
+03001898 .byt:0001
+
 03001899 iram_wario_animation
+03001899 .byt:0001
+
 03001910 iram_heart_meter
+03001910 .byt:0001
+
 03001911 iram_heart_meter_increment
+03001911 .byt:0001
+
 03001914 iram_heart_gauge
+03001914 .byt:0001
+
 03001915 iram_heart_gauge_increment
+03001915 .byt:0001
+
 03002cc8 iram_demo_buttons
+03002cc8 .wrd:0200
+
 03002ec8 iram_demo_timings
+03002ec8 .wrd:0200
+
 
 ; Pause menu
+
 03004794 iram_pause_selection
+03004794 .byt:0001
+
 03004795 iram_pause_message
+03004795 .byt:0001
+
 
 ; Map Screen
+
 03003c44 iram_mapscreen_wario_heading
+03003c44 .byt:0001
+
 
 ; Stage Select
+
 03003c98 iram_stageselect_prev_stage
+03003c98 .byt:0001
+
 
 ; Minigames
+
 03000008 iram_minigame_coins
 0300000a iram_minigame_homerun_highscore
 0300000c iram_minigame_hop_highscore
@@ -51,7 +110,9 @@
 030047ce iram_minigame_cursor_y
 030047d6 iram_minigame_hop_counter
 
+
 ; Sound Room
+
 03004770 iram_soundroom_cd_rotation
 03004772 iram_soundroom_selection
 03004773 iram_soundroom_selection_x
@@ -62,20 +123,28 @@
 03004783 iram_soundroom_karaoke_pitch
 03004784 iram_soundroom_karaoke_speed
 
+
 ; Credits
+
 03004b04 iram_credits_txt_gfx_index
 
+
 ; Audio
-; The following needs disassembly the proove it's indeed an audio handler
-03004b28 iram_audio_handler_thumb_code
+
+03004b28 .thumb
+03004b28 iram_audio_code
+
 
 ; Demos
+
 0840086c rom_demo_headers
 0840092c rom_demo_orderlist
 0878f5f4 rom_ptrs_demo_buttons
 0878f634 rom_ptrs_demo_timings
 
+
 ; Pointer tables
+
 0863956c rom_ptrs_passage_names_jp
 08639588 rom_ptrs_passage_names_en
 0863a31c rom_ptrs_stage_names_jp
@@ -94,224 +163,632 @@
 08747178 rom_ptrs_credits_pal
 08747108 rom_ptrs_credits_txtmaps
 
+
 ; Indices
+
 086391c4 rom_idxs_stage_headers
 0863d85c rom_idxs_cd_sfx
 
+
 ; Passage names
+
 0864c758 rom_txt_jp_entry_passage
+0864c758 .byt:001a
+
 0864c772 rom_txt_en_entry_passage
+0864c772 .byt:001a
+
 0864c78c rom_txt_jp_emerald_passage
+0864c78c .byt:001a
+
 0864c7a6 rom_txt_en_emerald_passage
+0864c7a6 .byt:001a
+
 0864c7c0 rom_txt_jp_ruby_passage
+0864c7c0 .byt:001a
+
 0864c7da rom_txt_en_ruby_passage
+0864c7da .byt:001a
+
 0864c7f4 rom_txt_jp_topaz_passage
+0864c7f4 .byt:001a
+
 0864c80e rom_txt_en_topaz_passage
+0864c80e .byt:001a
+
 0864c828 rom_txt_jp_sapphire_passage
+0864c828 .byt:001a
+
 0864c842 rom_txt_en_sapphire_passage
+0864c842 .byt:001a
+
 0864c85c rom_txt_jp_golden_pyramid
+0864c85c .byt:001a
+
 0864c876 rom_txt_en_golden_pyramid
+0864c876 .byt:001a
+
 0864c890 rom_txt_jp_sound_room
+0864c890 .byt:001a
+
 0864c8aa rom_txt_en_sound_room
+0864c8aa .byt:001a
+
 
 ; Stage names
+
 0865cec4 rom_txt_jp_hall_of_hieroglyphs
+0865cec4 .byt:001a
+
 0865cede rom_txt_en_hall_of_hieroglyphs
+0865cede .byt:001a
+
 0865cef8 rom_txt_jp_spoiled_rotten
+0865cef8 .byt:001a
+
 0865cf12 rom_txt_en_spoiled_rotten
+0865cf12 .byt:001a
+
 0865cf2c rom_txt_jp_mini_game_shop_1
+0865cf2c .byt:001a
+
 0865cf46 rom_txt_en_mini_game_shop_1
+0865cf46 .byt:001a
+
 0865cf60 rom_txt_jp_palm_tree_paradise
+0865cf60 .byt:001a
+
 0865cf7a rom_txt_en_palm_tree_paradise
+0865cf7a .byt:001a
+
 0865cf94 rom_txt_jp_wildflower_fields
+0865cf94 .byt:001a
+
 0865cfae rom_txt_en_wildflower_fields
+0865cfae .byt:001a
+
 0865cfc8 rom_txt_jp_mystic_lake
+0865cfc8 .byt:001a
+
 0865cfe2 rom_txt_en_mystic_lake
+0865cfe2 .byt:001a
+
 0865cffc rom_txt_jp_monsoon_jungle
+0865cffc .byt:001a
+
 0865d016 rom_txt_en_monsoon_jungle
+0865d016 .byt:001a
+
 0865d030 rom_txt_jp_cractus
+0865d030 .byt:001a
+
 0865d04a rom_txt_en_cractus
+0865d04a .byt:001a
+
 0865d064 rom_txt_jp_mini_game_shop_2
+0865d064 .byt:001a
+
 0865d07e rom_txt_en_mini_game_shop_2
+0865d07e .byt:001a
+
 0865d098 rom_txt_jp_the_curious_factory
+0865d098 .byt:001a
+
 0865d0b2 rom_txt_en_the_curious_factory
+0865d0b2 .byt:001a
+
 0865d0cc rom_txt_jp_the_toxic_landfill
+0865d0cc .byt:001a
+
 0865d0e6 rom_txt_en_the_toxic_landfill
+0865d0e6 .byt:001a
+
 0865d100 rom_txt_jp_40_below_fridge
+0865d100 .byt:001a
+
 0865d11a rom_txt_en_40_below_fridge
+0865d11a .byt:001a
+
 0865d134 rom_txt_jp_pinball_zone
+0865d134 .byt:001a
+
 0865d14e rom_txt_en_pinball_zone
+0865d14e .byt:001a
+
 0865d168 rom_txt_jp_cuckoo_condor
+0865d168 .byt:001a
+
 0865d182 rom_txt_en_cuckoo_condor
+0865d182 .byt:001a
+
 0865d19c rom_txt_jp_mini_game_shop_3
+0865d19c .byt:001a
+
 0865d1b6 rom_txt_en_mini_game_shop_3
+0865d1b6 .byt:001a
+
 0865d1d0 rom_txt_jp_toy_block_tower
+0865d1d0 .byt:001a
+
 0865d1ea rom_txt_en_toy_block_tower
+0865d1ea .byt:001a
+
 0865d204 rom_txt_jp_the_big_board
+0865d204 .byt:001a
+
 0865d21e rom_txt_en_the_big_board
+0865d21e .byt:001a
+
 0865d238 rom_txt_jp_doodle_woods
+0865d238 .byt:001a
+
 0865d252 rom_txt_en_doodle_woods
+0865d252 .byt:001a
+
 0865d26c rom_txt_jp_domino_row
+0865d26c .byt:001a
+
 0865d286 rom_txt_en_domino_row
+0865d286 .byt:001a
+
 0865d2a0 rom_txt_jp_aerodent
+0865d2a0 .byt:001a
+
 0865d2ba rom_txt_en_aerodent
+0865d2ba .byt:001a
+
 0865d2d4 rom_txt_jp_mini_game_shop_4
+0865d2d4 .byt:001a
+
 0865d2ee rom_txt_en_mini_game_shop_4
+0865d2ee .byt:001a
+
 0865d308 rom_txt_jp_crescent_moon_village
+0865d308 .byt:001a
+
 0865d322 rom_txt_en_crescent_moon_village
+0865d322 .byt:001a
+
 0865d33c rom_txt_jp_arabian_night
+0865d33c .byt:001a
+
 0865d356 rom_txt_en_arabian_night
+0865d356 .byt:001a
+
 0865d370 rom_txt_jp_fiery_cavern
+0865d370 .byt:001a
+
 0865d38a rom_txt_en_fiery_cavern
+0865d38a .byt:001a
+
 0865d3a4 rom_txt_jp_hotel_horror
+0865d3a4 .byt:001a
+
 0865d3be rom_txt_en_hotel_horror
+0865d3be .byt:001a
+
 0865d3d8 rom_txt_jp_catbat
+0865d3d8 .byt:001a
+
 0865d3f2 rom_txt_en_catbat
+0865d3f2 .byt:001a
+
 0865d40c rom_txt_jp_mini_game_shop_5
+0865d40c .byt:001a
+
 0865d426 rom_txt_en_mini_game_shop_5
+0865d426 .byt:001a
+
 0865d440 rom_txt_jp_golden_passage
+0865d440 .byt:001a
+
 0865d45a rom_txt_en_golden_passage
+0865d45a .byt:001a
+
 0865d474 rom_txt_jp_golden_diva
+0865d474 .byt:001a
+
 0865d48e rom_txt_en_golden_diva
+0865d48e .byt:001a
+
 0865d4a8 rom_txt_jp_mini_game_shop_6
+0865d4a8 .byt:001a
+
 0865d4c2 rom_txt_en_mini_game_shop_6
+0865d4c2 .byt:001a
+
 
 ; CD names
+
 086cb488 rom_txt_jp_about_that_shepherd
+086cb488 .byt:001a
+
 086cb4a2 rom_txt_en_about_that_shepherd
+086cb4a2 .byt:001a
+
 086cb4bc rom_txt_jp_things_that_never_change
+086cb4bc .byt:001a
+
 086cb4d6 rom_txt_en_things_that_never_change
+086cb4d6 .byt:001a
+
 086cb4f0 rom_txt_jp_tomorrows_blood_pressure
+086cb4f0 .byt:001a
+
 086cb50a rom_txt_en_tomorrows_blood_pressure
+086cb50a .byt:001a
+
 086cb524 rom_txt_jp_beyond_the_headrush
+086cb524 .byt:001a
+
 086cb53e rom_txt_en_beyond_the_headrush
+086cb53e .byt:001a
+
 086cb558 rom_txt_jp_driftwood_and_the_island_dog
+086cb558 .byt:001a
+
 086cb572 rom_txt_en_driftwood_and_the_island_dog
+086cb572 .byt:001a
+
 086cb58c rom_txt_jp_the_judges_feet
+086cb58c .byt:001a
+
 086cb5a6 rom_txt_en_the_judges_feet
+086cb5a6 .byt:001a
+
 086cb5c0 rom_txt_jp_the_moons_lamppost
+086cb5c0 .byt:001a
+
 086cb5da rom_txt_en_the_moons_lamppost
+086cb5da .byt:001a
+
 086cb5f4 rom_txt_jp_soft_shell
+086cb5f4 .byt:001a
+
 086cb60e rom_txt_en_soft_shell
+086cb60e .byt:001a
+
 086cb628 rom_txt_jp_so_sleepy
+086cb628 .byt:001a
+
 086cb642 rom_txt_en_so_sleepy
+086cb642 .byt:001a
+
 086cb65c rom_txt_jp_the_short_futon
+086cb65c .byt:001a
+
 086cb676 rom_txt_en_the_short_futon
+086cb676 .byt:001a
+
 086cb690 rom_txt_jp_avocado_song
+086cb690 .byt:001a
+
 086cb6aa rom_txt_en_avocado_song
+086cb6aa .byt:001a
+
 086cb6c4 rom_txt_jp_mr_fly
+086cb6c4 .byt:001a
+
 086cb6de rom_txt_en_mr_fly
+086cb6de .byt:001a
+
 086cb6f8 rom_txt_jp_yesterdays_words
+086cb6f8 .byt:001a
+
 086cb712 rom_txt_en_yesterdays_words
+086cb712 .byt:001a
+
 086cb72c rom_txt_jp_the_errand
+086cb72c .byt:001a
+
 086cb746 rom_txt_en_the_errand
+086cb746 .byt:001a
+
 086cb760 rom_txt_jp_you_and_your_shoes
+086cb760 .byt:001a
+
 086cb77a rom_txt_en_you_and_your_shoes
+086cb77a .byt:001a
+
 086cb794 rom_txt_jp_mr_ether_and_planaria
+086cb794 .byt:001a
+
 086cb7ae rom_txt_en_mr_ether_and_planaria
+086cb7ae .byt:001a
+
 
 ; Karaoke texts
+
 086d3108 rom_txt_jp_karaoke_title
+086d3108 .byt:001a
+
 086d3122 rom_txt_jp_karaoke_lyrics_01
+086d3122 .byt:001a
+
 086d313c rom_txt_jp_karaoke_lyrics_02
+086d313c .byt:001a
+
 086d3156 rom_txt_jp_karaoke_lyrics_03
+086d3156 .byt:001a
+
 086d3170 rom_txt_jp_karaoke_lyrics_04
+086d3170 .byt:001a
+
 086d318a rom_txt_jp_karaoke_lyrics_05
+086d318a .byt:001a
+
 086d31a4 rom_txt_jp_karaoke_lyrics_06
+086d31a4 .byt:001a
+
 086d31be rom_txt_jp_karaoke_lyrics_07
+086d31be .byt:001a
+
 086d31d8 rom_txt_jp_karaoke_lyrics_08
+086d31d8 .byt:001a
+
 086d31f2 rom_txt_jp_karaoke_lyrics_09
+086d31f2 .byt:001a
+
 086d320c rom_txt_jp_karaoke_lyrics_0A
+086d320c .byt:001a
+
 086d3226 rom_txt_en_karaoke_title
+086d3226 .byt:001a
+
 086d3240 rom_txt_en_karaoke_lyrics_01
+086d3240 .byt:001a
+
 086d325a rom_txt_en_karaoke_lyrics_02
+086d325a .byt:001a
+
 086d3274 rom_txt_en_karaoke_lyrics_03
+086d3274 .byt:001a
+
 086d328e rom_txt_en_karaoke_lyrics_04
+086d328e .byt:001a
+
 086d32a8 rom_txt_en_karaoke_lyrics_05
+086d32a8 .byt:001a
+
 086d32c2 rom_txt_en_karaoke_lyrics_06
+086d32c2 .byt:001a
+
 086d32dc rom_txt_en_karaoke_lyrics_07
+086d32dc .byt:001a
+
 086d32f6 rom_txt_en_karaoke_lyrics_08
+086d32f6 .byt:001a
+
 086d3310 rom_txt_en_karaoke_lyrics_09
+086d3310 .byt:001a
+
 086d332a rom_txt_en_karaoke_lyrics_0A
+086d332a .byt:001a
+
 086d3344 rom_txt_en_karaoke_lyrics_0B
+086d3344 .byt:001a
+
 086d335e rom_txt_en_karaoke_lyrics_0C
+086d335e .byt:001a
+
 086d3378 rom_txt_en_karaoke_lyrics_0D
+086d3378 .byt:001a
+
 
 ; Minigame texts
+
 086f481c rom_txt_jp_win_medals_in_mini_games
+086f481c .byt:001a
+
 086f4836 rom_txt_en_win_medals_in_mini_games
+086f4836 .byt:001a
+
 086f4850 rom_txt_jp_warios_homerun_derby
+086f4850 .byt:001a
+
 086f486a rom_txt_en_warios_homerun_derby
+086f486a .byt:001a
+
 086f4884 rom_txt_jp_the_wario_hop
+086f4884 .byt:001a
+
 086f489e rom_txt_en_the_wario_hop
+086f489e .byt:001a
+
 086f48b8 rom_txt_jp_warios_roulette
+086f48b8 .byt:001a
+
 086f48d2 rom_txt_en_warios_roulette
+086f48d2 .byt:001a
+
 086f48ec rom_txt_jp_you_need_more_coins
+086f48ec .byt:001a
+
 086f4906 rom_txt_en_you_need_more_coins
+086f4906 .byt:001a
+
 086f4920 rom_txt_jp_under_construction
+086f4920 .byt:001a
+
 086f493a rom_txt_en_under_construction
+086f493a .byt:001a
+
 086f4954 rom_txt_jp_want_to_play_some_more
+086f4954 .byt:001a
+
 086f498e rom_txt_en_want_to_play_some_more
+086f498e .byt:001a
+
 086f4988 rom_txt_jp_come_back_after_saving_up
+086f4988 .byt:001a
+
 086f49a2 rom_txt_en_come_back_after_saving_up
+086f49a2 .byt:001a
+
 086f49bc rom_txt_jp_come_again
+086f49bc .byt:001a
+
 086f49d6 rom_txt_en_come_again
+086f49d6 .byt:001a
+
 086f49f0 rom_txt_jp_welcome_back
+086f49f0 .byt:001a
+
 086f4a0a rom_txt_en_welcome_back
+086f4a0a .byt:001a
+
 086f4a24 rom_txt_jp_you_got_a_new_high_score
+086f4a24 .byt:001a
+
 086f4a3e rom_txt_en_you_got_a_new_high_score
+086f4a3e .byt:001a
+
 086f4a58 rom_txt_jp_dont_you_want_to_play
+086f4a58 .byt:001a
+
 086f4a72 rom_txt_en_dont_you_want_to_play
+086f4a72 .byt:001a
 
 ; Item Shop texts
+
 0873d458 rom_txt_jp_leaving_without_buying
+0873d458 .byt:001a
+
 0873d472 rom_txt_en_leaving_without_buying
+0873d472 .byt:001a
+
 0873d48c rom_txt_jp_thats_an_apple_bomb
+0873d48c .byt:001a
+
 0873d4a6 rom_txt_en_thats_an_apple_bomb
+0873d4a6 .byt:001a
+
 0873d4c0 rom_txt_jp_thats_a_blast_cannon
+0873d4c0 .byt:001a
+
 0873d4da rom_txt_en_thats_a_blast_cannon
+0873d4da .byt:001a
+
 0873d4f4 rom_txt_jp_thats_vizorman
+0873d4f4 .byt:001a
+
 0873d50e rom_txt_en_thats_vizorman
+0873d50e .byt:001a
+
 0873d528 rom_txt_jp_thats_a_bugle
+0873d528 .byt:001a
+
 0873d542 rom_txt_en_thats_a_bugle
+0873d542 .byt:001a
+
 0873d55c rom_txt_jp_thats_a_black_dog
+0873d55c .byt:001a
+
 0873d576 rom_txt_en_thats_a_black_dog
+0873d576 .byt:001a
+
 0873d590 rom_txt_jp_those_are_the_large_lips
+0873d590 .byt:001a
+
 0873d5aa rom_txt_en_those_are_the_large_lips
+0873d5aa .byt:001a
+
 0873d5c4 rom_txt_jp_thats_a_big_fist
+0873d5c4 .byt:001a
+
 0873d5de rom_txt_en_thats_a_big_fist
+0873d5de .byt:001a
+
 0873d5f8 rom_txt_jp_thats_a_black_dragon
+0873d5f8 .byt:001a
+
 0873d612 rom_txt_en_thats_a_black_dragon
+0873d612 .byt:001a
+
 0873d62c rom_txt_jp_heres_a_smile_for_you
+0873d62c .byt:001a
+
 0873d646 rom_txt_en_heres_a_smile_for_you
+0873d646 .byt:001a
+
 0873d660 rom_txt_jp_welcome_to_the_item_shop
+0873d660 .byt:001a
+
 0873d67a rom_txt_en_welcome_to_the_item_shop
+0873d67a .byt:001a
+
 0873d694 rom_txt_jp_you_need_more_medals
+0873d694 .byt:001a
+
 0873d6ae rom_txt_en_you_need_more_medals
+0873d6ae .byt:001a
+
 0873d6c8 rom_txt_jp_thank_you
+0873d6c8 .byt:001a
+
 0873d6e2 rom_txt_en_thank_you
+0873d6e2 .byt:001a
+
 0873d6fc rom_txt_jp_go_play_some_mini_games
+0873d6fc .byt:001a
+
 0873d716 rom_txt_en_go_play_some_mini_games
+0873d716 .byt:001a
+
 0873d730 rom_txt_jp_hmph
+0873d730 .byt:001a
+
 0873d74a rom_txt_en_hmph
+0873d74a .byt:001a
+
 
 ; Credits textmaps
+
 08789fcc rom_txtmap_credits_00
+08789fcc .wrd:0500
+
 0878a4cc rom_txtmap_credits_01
+0878a4cc .wrd:0500
+
 0878a9cc rom_txtmap_credits_02
+0878a9cc .wrd:0500
+
 0878aecc rom_txtmap_credits_03
+0878aecc .wrd:0500
+
 0878b3cc rom_txtmap_credits_04
+0878b3cc .wrd:0500
+
 0878b8cc rom_txtmap_credits_05
+0878b8cc .wrd:0500
+
 0878bdcc rom_txtmap_credits_06
+0878bdcc .wrd:0500
+
 0878c2cc rom_txtmap_credits_07
+0878c2cc .wrd:0500
+
 0878c7cc rom_txtmap_credits_08
+0878c7cc .wrd:0500
+
 0878cccc rom_txtmap_credits_09
+0878cccc .wrd:0500
+
 0878d1cc rom_txtmap_credits_0a
+0878d1cc .wrd:0500
+
 0878d6cc rom_txtmap_credits_0b
+0878d6cc .wrd:0500
+
 0878dbcc rom_txtmap_credits_0c
+0878dbcc .wrd:0500
+
 0878e0cc rom_txtmap_credits_0d
+0878e0cc .wrd:0500
+
 
 ; GFX
+
 08283f14 rom_pal_nintendo_logo
 08283f54 rom_gfx_nintendo_logo
 08285a40 rom_gfx_a_few_days_later
@@ -349,12 +826,21 @@
 0877d150 rom_pal_credits_splash_0e
 0877d170 rom_gfx_credits_splash_0e
 
+
 ; ROM procedures
+
+08003220 .thumb
 08003220 rom_proc_swi_cpuset
+
+08003224 .thumb
 08003224 rom_proc_swi_decompress_lz77_16
+
+0806bdf8 .thumb
 0806bdf8 rom_proc_rle_decompress
 
+
 ; Unknown ROM procedures
+
 080001cc rom_proc_080001cc
 080006b0 rom_proc_080006b0
 080007bc rom_proc_080007bc
@@ -4171,7 +4657,9 @@
 08566900 rom_proc_08566900
 08566930 rom_proc_08566930
 
+
 ; IO registers (lifted from GBATEK for convenience)
+
 04000000 io_dispcnt
 04000004 io_dispstat
 04000006 io_vcount
