@@ -85,6 +85,7 @@
 08730150 rom_ptrs_itemshop_txt_en
 08747140 rom_ptrs_credits_gfx
 08747178 rom_ptrs_credits_pal
+08747108 rom_ptrs_credits_txtmaps
 
 ; Indices
 086391c4 rom_idxs_stage_headers
@@ -286,6 +287,22 @@
 0873d716 rom_txt_en_go_play_some_mini_games
 0873d730 rom_txt_jp_hmph
 0873d74a rom_txt_en_hmph
+
+; Credits textmaps
+08789fcc rom_txtmap_credits_00
+0878a4cc rom_txtmap_credits_01
+0878a9cc rom_txtmap_credits_02
+0878aecc rom_txtmap_credits_03
+0878b3cc rom_txtmap_credits_04
+0878b8cc rom_txtmap_credits_05
+0878bdcc rom_txtmap_credits_06
+0878c2cc rom_txtmap_credits_07
+0878c7cc rom_txtmap_credits_08
+0878cccc rom_txtmap_credits_09
+0878d1cc rom_txtmap_credits_0a
+0878d6cc rom_txtmap_credits_0b
+0878dbcc rom_txtmap_credits_0c
+0878e0cc rom_txtmap_credits_0d
 
 ; GFX
 08283f14 rom_pal_nintendo_logo
