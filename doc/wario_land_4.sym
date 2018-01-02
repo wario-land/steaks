@@ -102,13 +102,31 @@
 ; Minigames
 
 03000008 iram_minigame_coins
+03000008 .wrd:0002
+
 0300000a iram_minigame_homerun_highscore
+0300000a .wrd:0002
+
 0300000c iram_minigame_hop_highscore
+0300000c .wrd:0002
+
 0300000e iram_minigame_roulette_highscore
+0300000e .wrd:0002
+
 030047b8 iram_minigame_selection
+030047b8 .byt:0001
+
+030047b9 iram_minigame_state
+030047b9 .byt:0001
+
 030047cc iram_minigame_cursor_x
+030047cc .wrd:0002
+
 030047ce iram_minigame_cursor_y
+030047ce .wrd:0002
+
 030047d6 iram_minigame_hop_counter
+030047d6 .wrd:0002
 
 
 ; Sound Room
