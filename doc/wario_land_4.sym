@@ -67,7 +67,7 @@
 
 ; Audio
 ; The following needs disassembly the proove it's indeed an audio handler
-03004b28 iram_audio_handler_arm_code
+03004b28 iram_audio_handler_thumb_code
 
 ; Demos
 0840086c rom_demo_headers
