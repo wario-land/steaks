@@ -62,6 +62,9 @@
 03004783 iram_soundroom_karaoke_pitch
 03004784 iram_soundroom_karaoke_speed
 
+; Credits
+03004b04 iram_credits_txt_gfx_index
+
 ; Demos
 0840086c rom_demo_headers
 0840092c rom_demo_orderlist
