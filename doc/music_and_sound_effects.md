@@ -898,3 +898,4 @@ The background music of the stages are defined in the warp table.
 ## TODO
 - Find out the soundbank and sample header formats.
 - Find out the track data format
+- 1024 bytes of THUMB code copied from 0x080010f4 to 0x03004b28
