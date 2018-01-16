@@ -967,15 +967,31 @@
 
 ; ROM procedures
 
+; A wrapper around the CpuSet (0x0B) BIOS call.
+; r0 - source address
+; r1 - destination address
+; r2 - length mode (see GBATEK)
 08003220 .thumb
 08003220 rom_proc_swi_cpuset
 
+; A wrapper around the LZ77UnCompReadNormalWrite16bit (0x12) BIOS call.
+; r0 - source address
+; r1 - destination address
 08003224 .thumb
 08003224 rom_proc_swi_decompress_lz77_16
 
+; RLE decompression routine. Used for decompressing the level data.
+; r0 - TODO: 0x00, 0x01, 0x02?
+; r1 - source address
+; r2 - destination address
 0806bdf8 .thumb
 0806bdf8 rom_proc_rle_decompress
 
+; Copies a tilemap into the video ram.
+; r0 - source address
+; r1 - destination address
+0800b734 .thumb
+0800b734 rom_proc_copy_tilemap
 
 ; Unknown ROM procedures
 
@@ -1157,7 +1173,6 @@
 0800b5e4 rom_proc_0800b5e4
 0800b684 rom_proc_0800b684
 0800b6c0 rom_proc_0800b6c0
-0800b734 rom_proc_0800b734
 0800b7bc rom_proc_0800b7bc
 0800b7e0 rom_proc_0800b7e0
 0800b804 rom_proc_0800b804
