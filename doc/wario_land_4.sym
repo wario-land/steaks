@@ -952,10 +952,16 @@
 082877b8 rom_gfx_intro_wariocar_2
 082877b8 .byt:0000
 
-0828602c rom_gfx_intro_unknown_3
+08285fcc rom_pal_intro_shadow_of_wario
+08285fcc .byt:0000
+
+0828602c rom_gfx_intro_shadow_of_wario
 0828602c .byt:0000
 
-0828455c rom_gfx_intro_unknown_4
+082844fc rom_pal_intro_night_with_cat
+082844fc .byt:0000
+
+0828455c rom_pal_intro_night_with_cat
 0828455c .byt:0000
 
 
