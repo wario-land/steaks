@@ -922,6 +922,41 @@
 0877d170 rom_gfx_credits_splash_0e
 0877d170 .byt:0000
 
+0873d764 rom_gfx_menu_1
+0873d764 .byt:0000
+
+087430fc rom_gfx_menu_2
+087430fc .byt:0000
+
+08298a50 rom_gfx_menu_wariocar
+08298a50 .byt:0000
+
+08295954 rom_gfx_intro_logo
+08295954 .byt:0000
+
+0829443c rom_gfx_intro_background
+0829443c .byt:0000
+
+0828c730 rom_gfx_intro_wariocar_cat_newspaper
+0828c730 .byt:0000
+
+0828b234 rom_gfx_intro_unknown_1
+0828b234 .byt:0000
+
+0828aee8 rom_gfx_intro_unknown_2
+0828aee8 .byt:0000
+
+08289324 rom_gfx_intro_wariocar_1
+08289324 .byt:0000
+
+082877b8 rom_gfx_intro_wariocar_2
+082877b8 .byt:0000
+
+0828602c rom_gfx_intro_unknown_3
+0828602c .byt:0000
+
+0828455c rom_gfx_intro_unknown_4
+0828455c .byt:0000
 
 
 ; ROM procedures
