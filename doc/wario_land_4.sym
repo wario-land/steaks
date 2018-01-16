@@ -808,41 +808,120 @@
 ; GFX
 
 08283f14 rom_pal_nintendo_logo
+08283f14 .byt:0040
+
+; TODO: LZ77_16 compressed size
 08283f54 rom_gfx_nintendo_logo
+08283f54 .byt:0000
+
+; TODO: LZ77_16 compressed size
 08285a40 rom_gfx_a_few_days_later
+08285a40 .byt:0000
+
+; TODO: LZ77_16 compressed size
 0828e880 rom_gfx_newspaper
+0828e880 .byt:0000
+
+; TODO: LZ77_16 compressed size
 082d24b0 rom_gfx_thank_you_wario
+082d24b0 .byt:0000
+
+; TODO: DMA copy size
 082d40f4 rom_pal_steaks
+082d40f4 .byt:0000
+
+; TODO: LZ77_16 compressed size
 082d41d4 rom_gfx_steaks
+082d41d4 .byt:0000
+
+; TODO: LZ77_16 compressed size
 082d8390 rom_gfx_the_end
+082d8390 .byt:0000
+
 0874c3b0 rom_pal_credits_splash_01
+0874c3b0 .byt:0000
+
 0874c3d0 rom_gfx_credits_splash_01
+0874c3d0 .byt:0000
+
 0874ffd0 rom_pal_credits_splash_02
+0874ffd0 .byt:0000
+
 0874fff0 rom_gfx_credits_splash_02
+0874fff0 .byt:0000
+
 08753bf0 rom_pal_credits_splash_03
+08753bf0 .byt:0000
+
 08753c10 rom_gfx_credits_splash_03
+08753c10 .byt:0000
+
 08757810 rom_pal_credits_splash_04
+08757810 .byt:0000
+
 08757830 rom_gfx_credits_splash_04
+08757830 .byt:0000
+
 0875b430 rom_pal_credits_splash_05
+0875b430 .byt:0000
+
 0875b450 rom_gfx_credits_splash_05
+0875b450 .byt:0000
+
 0875f050 rom_pal_credits_splash_06
+0875f050 .byt:0000
+
 0875f070 rom_gfx_credits_splash_06
+0875f070 .byt:0000
+
 08762c70 rom_pal_credits_splash_07
+08762c70 .byt:0000
+
 08762c90 rom_gfx_credits_splash_07
+08762c90 .byt:0000
+
 08766890 rom_pal_credits_splash_08
+08766890 .byt:0000
+
 087668b0 rom_gfx_credits_splash_08
+087668b0 .byt:0000
+
 0876a4b0 rom_pal_credits_splash_09
+0876a4b0 .byt:0000
+
 0876a4d0 rom_gfx_credits_splash_09
+0876a4d0 .byt:0000
+
 0876e0d0 rom_pal_credits_splash_0a
+0876e0d0 .byt:0000
+
 0876e0f0 rom_gfx_credits_splash_0a
+0876e0f0 .byt:0000
+
 08771cf0 rom_pal_credits_splash_0b
+08771cf0 .byt:0000
+
 08771d10 rom_gfx_credits_splash_0b
+08771d10 .byt:0000
+
 08775910 rom_pal_credits_splash_0c
+08775910 .byt:0000
+
 08775930 rom_gfx_credits_splash_0c
+08775930 .byt:0000
+
 08779530 rom_pal_credits_splash_0d
+08779530 .byt:0000
+
 08779550 rom_gfx_credits_splash_0d
+08779550 .byt:0000
+
 0877d150 rom_pal_credits_splash_0e
+0877d150 .byt:0000
+
 0877d170 rom_gfx_credits_splash_0e
+0877d170 .byt:0000
+
 
 
 ; ROM procedures
