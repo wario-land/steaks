@@ -37,6 +37,27 @@ impl Rgb555 {
     }
 }
 
+#[derive(Copy, Clone, Debug)]
+struct Tile(u16);
+
+impl Tile {
+    fn tile_index(&self) -> usize {
+        (self.0 & 0x3FF) as usize
+    }
+
+    fn palette_index(&self) -> usize {
+        ((self.0 >> 12) & 0x0F) as usize
+    }
+
+    fn x_mirror(&self) -> bool {
+        (self.0 >> 10) & 0x01 == 0x01
+    }
+
+    fn y_mirror(&self) -> bool {
+        (self.0 >> 11) & 0x01 == 0x01
+    }
+}
+
 #[derive(StructOpt)]
 #[structopt(name = "intro_gfx_viewer")]
 struct Opt {
@@ -53,13 +74,15 @@ struct Opt {
     map_offset: HexOffset,
 }
 
-fn draw_tile(buffer: &mut [u32], buffer_width: usize, buffer_height: usize, tile_index: usize, tile_x: usize, tile_y: usize, gfx_data: &[u8], gfx_palette: &[Rgb555]) {
+fn draw_tile(buffer: &mut [u32], buffer_width: usize, buffer_height: usize, tile: Tile, tile_x: usize, tile_y: usize, gfx_data: &[u8], gfx_palette: &[Rgb555]) {
     for pixel_y in 0..8 {
         for pixel_x in 0..8 {
             let palette_index = {
-                let value = gfx_data[tile_index * 32 + pixel_y * 4 + pixel_x / 2];
+                let pixel_x_mirror = if tile.x_mirror() { 7 - pixel_x } else { pixel_x };
+                let pixel_y_mirror = if tile.y_mirror() { 7 - pixel_y } else { pixel_y };
+                let value = gfx_data[tile.tile_index() * 32 + pixel_y_mirror * 4 + pixel_x_mirror / 2];
 
-                if (pixel_x & 0x01) == 0 {
+                if (pixel_x_mirror & 0x01) == 0 {
                     value & 0x0F
                 } else {
                     (value >> 4)
@@ -68,15 +91,14 @@ fn draw_tile(buffer: &mut [u32], buffer_width: usize, buffer_height: usize, tile
 
             let x_pos = tile_x * 8 + pixel_x;
             let y_pos = tile_y * 8 + pixel_y;
-            buffer[y_pos * buffer_width + x_pos] = gfx_palette[palette_index as usize].argb8888();
+            buffer[y_pos * buffer_width + x_pos] = gfx_palette[tile.palette_index() * 16 + palette_index as usize].argb8888();
         }
     }
 }
 
 // cargo run --package intro_gfx_viewer -- --data 0828455C --map 082856DE --palette 082844FC --rom rom/wario_land_4.gba
 // cargo run --package intro_gfx_viewer -- --data 08283f54 --map 082844ee --palette 08283f14 --rom rom/wario_land_4.gba
-//
-// 28586E
+// cargo run --package intro_gfx_viewer -- --data 0828602c --map 0828759c --palette 08285fcc --rom rom/wario_land_4.gba
 
 fn main() {
     let opt = Opt::from_args();
@@ -94,7 +116,7 @@ fn main() {
         let mut palette: Vec<Rgb555> = Vec::new();
         let mut cursor = Cursor::new(&rom_data[opt.palette_offset.0 as usize..]);
 
-        for _ in 0..16 {
+        for _ in 0..256 {
             palette.push(Rgb555(cursor.read_u16::<LittleEndian>().unwrap()))
         }
 
@@ -106,7 +128,7 @@ fn main() {
 
     let gfx_map = {
         let mut cursor = Cursor::new(&rom_data[opt.map_offset.0 as usize..]);
-        let mut map: Vec<u16> = vec![0; gfx_map_width * gfx_map_height];
+        let mut map: Vec<Tile> = vec![Tile(0); gfx_map_width * gfx_map_height];
 
         loop {
             let header = cursor.read_u16::<LittleEndian>().unwrap();
@@ -120,11 +142,11 @@ fn main() {
 
             if (header & 0x8000) == 0 {
                 for i in 0..length {
-                    map[start_offset + i] = (value + i as u16) & 0x1FF;
+                    map[start_offset + i] = Tile(value + i as u16);
                 }
             } else {
                 for i in 0..length {
-                    map[start_offset + i] = value & 0x1FF;
+                    map[start_offset + i] = Tile(value);
                 }
             }
         }
@@ -140,8 +162,9 @@ fn main() {
 
     for tile_y in 0..gfx_map_height {
         for tile_x in 0..gfx_map_width {
-            let tile_index = gfx_map[tile_y * gfx_map_width + tile_x] as usize;
-            draw_tile(&mut buffer[..], buffer_width, buffer_height, tile_index, tile_x, tile_y, &gfx_data[..], &gfx_palette[..]);
+            let tile = gfx_map[tile_y * gfx_map_width + tile_x];
+
+            draw_tile(&mut buffer[..], buffer_width, buffer_height, tile, tile_x, tile_y, &gfx_data[..], &gfx_palette[..]);
         }
     }
 

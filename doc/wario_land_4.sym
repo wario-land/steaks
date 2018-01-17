@@ -131,15 +131,15 @@
 
 ; Sound Room
 
-03004770 iram/soundroom/cd_rotation
-03004772 iram/soundroom/selection
-03004773 iram/soundroom/selection_x
-03004774 iram/soundroom/selection_y
-0300477e iram/soundroom/karaoke_button_state
-03004781 iram/soundroom/karaoke_state
-03004782 iram/soundroom/karaoke_singing
-03004783 iram/soundroom/karaoke_pitch
-03004784 iram/soundroom/karaoke_speed
+03004770 iram/sound_room/cd_rotation
+03004772 iram/sound_room/selection
+03004773 iram/sound_room/selection_x
+03004774 iram/sound_room/selection_y
+0300477e iram/sound_room/karaoke_button_state
+03004781 iram/sound_room/karaoke_state
+03004782 iram/sound_room/karaoke_singing
+03004783 iram/sound_room/karaoke_pitch
+03004784 iram/sound_room/karaoke_speed
 
 
 ; Credits
@@ -815,6 +815,9 @@
 08283f54 rom/gfx/intro/nintendo_logo/data
 08283f54 .byt:0000
 
+082844ee rom/gfx/intro/nintendo_logo/map
+082844ee .byt:0000
+
 ; TODO: LZ77_16 compressed size
 08285a40 rom/gfx/credits/a_few_days_later/data
 08285a40 .byt:0000
@@ -959,12 +962,23 @@
 0828602c rom/gfx/intro/shadow_of_wario/data
 0828602c .byt:0000
 
+082873e4 rom/gfx/intro/shadow_of_wario/map/00
+082873e4 .byt:0000
+
+08287472 rom/gfx/intro/shadow_of_wario/map/01
+08287472 .byt:0000
+
+0828759c rom/gfx/intro/shadow_of_wario/map/02
+0828759c .byt:0000
+
 082844fc rom/gfx/intro/night_with_cat/pal
 082844fc .byt:0000
 
 0828455c rom/gfx/intro/night_with_cat/data
 0828455c .byt:0000
 
+082856de rom/gfx/intro/night_with_cat/map
+082856de .byt:0000
 
 ; ROM procedures
 
@@ -986,13 +1000,13 @@
 ; r1 - source address
 ; r2 - destination address
 0806bdf8 .thumb
-0806bdf8 rom/proc/rle_decompress
+0806bdf8 rom/proc/rle_decompress_level
 
-; Intro tilemap decompression routine. Uses some kind of delta compression.
+; RLE decompression routine. Used for decompressing the intro tilemaps.
 ; r0 - source address
 ; r1 - destination address
 0800b734 .thumb
-0800b734 rom/proc/decompress_tilemap
+0800b734 rom/proc/rle_decompress_tilemap
 
 ; Unknown ROM procedures
 
