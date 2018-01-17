@@ -1,0 +1,11 @@
+[package]
+name = "intro_gfx_viewer"
+version = "0.1.0"
+authors = ["Tibor Nagy <xnagytibor@gmail.com>"]
+
+[dependencies]
+minifb = "0.10.4"
+structopt = "0.1.0"
+structopt-derive = "0.1.0"
+gba-compression = { git = "https://github.com/xtibor/gba-compression.git" }
+byteorder = "1"
