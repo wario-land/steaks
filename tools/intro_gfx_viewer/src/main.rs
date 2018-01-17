@@ -99,6 +99,7 @@ fn draw_tile(buffer: &mut [u32], buffer_width: usize, buffer_height: usize, tile
 // cargo run --package intro_gfx_viewer -- --data 0828455C --map 082856DE --palette 082844FC --rom rom/wario_land_4.gba
 // cargo run --package intro_gfx_viewer -- --data 08283f54 --map 082844ee --palette 08283f14 --rom rom/wario_land_4.gba
 // cargo run --package intro_gfx_viewer -- --data 0828602c --map 0828759c --palette 08285fcc --rom rom/wario_land_4.gba
+// cargo run --package intro_gfx_viewer -- --data 082a37c0 --map 082a4934 --palette 082a37a0 --rom rom/wario_land_4.gba
 
 fn main() {
     let opt = Opt::from_args();

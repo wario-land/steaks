@@ -953,6 +953,15 @@
 08289324 rom/gfx/intro/wariocar_1/data
 08289324 .byt:0000
 
+0828ae70 rom/gfx/intro/wariocar_1/map/00
+0828ae70 .byt:0000
+
+0828ae1a rom/gfx/intro/wariocar_1/map/01
+0828ae1a .byt:0000
+
+0828acd8 rom/gfx/intro/wariocar_1/map/02
+0828acd8 .byt:0000
+
 082877b8 rom/gfx/intro/wariocar_2/data
 082877b8 .byt:0000
 
@@ -979,6 +988,24 @@
 
 082856de rom/gfx/intro/night_with_cat/map
 082856de .byt:0000
+
+082a37a0 rom/gfx/intro/pyramid_hole/pal
+082a37a0 .byt:0000
+
+082a37c0 rom/gfx/intro/pyramid_hole/data
+082a37c0 .byt:0000
+
+082a4934 rom/gfx/intro/pyramid_hole/map
+082a4934 .byt:0000
+
+0829fd48 rom/gfx/intro/pyramid_ladder/pal
+0829fd48 .byt:0000
+
+0829ff48 rom/gfx/intro/pyramid_ladder/data
+0829ff48 .byt:0000
+
+082a2cd0 rom/gfx/intro/pyramid_ladder/map
+082a2cd0 .byt:0000
 
 ; ROM procedures
 
