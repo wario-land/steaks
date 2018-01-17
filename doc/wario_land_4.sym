@@ -988,11 +988,11 @@
 0806bdf8 .thumb
 0806bdf8 rom/proc/rle_decompress
 
-; Copies a tilemap into the video ram.
+; Intro tilemap decompression routine. Uses some kind of delta compression.
 ; r0 - source address
 ; r1 - destination address
 0800b734 .thumb
-0800b734 rom/proc/copy_tilemap
+0800b734 rom/proc/decompress_tilemap
 
 ; Unknown ROM procedures
 
