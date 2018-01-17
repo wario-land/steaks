@@ -1,2 +1,2 @@
 [workspace]
-members = ["intro_gfx_viewer"]
+members = ["tools/intro_gfx_viewer"]
