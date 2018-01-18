@@ -20,9 +20,6 @@
 03000019 iram/savegame_slot
 03000019 .byt:0001
 
-03000020 iram/current_demo_orderlist_index
-03000020 .byt:0001
-
 03000023 iram/current_tileset
 03000023 .byt:0001
 
@@ -71,11 +68,80 @@
 03001915 iram/heart_gauge_increment
 03001915 .byt:0001
 
-03002cc8 iram/demo_buttons
+0300003e iram/destroyed_block_count
+0300003e .wrd:0002
+
+0203a000 wram/destroyed_block_list
+0203a000 .wrd:0000
+
+
+; Demo
+
+03000020 iram/demo/orderlist_index
+03000020 .byt:0001
+
+03002cc8 iram/demo/buttons
 03002cc8 .wrd:0200
 
-03002ec8 iram/demo_timings
+03002ec8 iram/demo/timings
 03002ec8 .wrd:0200
+
+0840092c rom/demo_orderlist
+0840092c .byt:0010
+
+0878f5f4 rom/ptrs/demo_buttons
+0878f5f4 .dbl:0040
+
+0878f634 rom/ptrs/demo_timings
+0878f634 .dbl:0040
+
+0840086c rom/demo_headers/00
+0840086c .byt:000c
+
+08400878 rom/demo_headers/01
+08400878 .byt:000c
+
+08400884 rom/demo_headers/02
+08400884 .byt:000c
+
+08400890 rom/demo_headers/03
+08400890 .byt:000c
+
+0840089c rom/demo_headers/04
+0840089c .byt:000c
+
+084008a8 rom/demo_headers/05
+084008a8 .byt:000c
+
+084008b4 rom/demo_headers/06
+084008b4 .byt:000c
+
+084008c0 rom/demo_headers/07
+084008c0 .byt:000c
+
+084008cc rom/demo_headers/08
+084008cc .byt:000c
+
+084008d8 rom/demo_headers/09
+084008d8 .byt:000c
+
+084008e4 rom/demo_headers/0a
+084008e4 .byt:000c
+
+084008f0 rom/demo_headers/0b
+084008f0 .byt:000c
+
+084008fc rom/demo_headers/0c
+084008fc .byt:000c
+
+08400908 rom/demo_headers/0d
+08400908 .byt:000c
+
+08400914 rom/demo_headers/0e
+08400914 .byt:000c
+
+08400920 rom/demo_headers/0f
+08400920 .byt:000c
 
 
 ; Pause menu
@@ -151,14 +217,6 @@
 
 03004b28 .thumb
 03004b28 iram/audio_code
-
-
-; Demos
-
-0840086c rom/demo_headers
-0840092c rom/demo_orderlist
-0878f5f4 rom/ptrs/demo_buttons
-0878f634 rom/ptrs/demo_timings
 
 
 ; Pointer tables
